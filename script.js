@@ -162,9 +162,9 @@
   contactNote:
     "Available for conversations around powertrain, drivetrain analysis, CAE, CAD, validation, and broader product development work.",
   contacts: [
-    { label: "Email", value: "patelshubham152.ps@gmail.com", url: "mailto:patelshubham152.ps@gmail.com" },
-    { label: "LinkedIn", value: "linkedin.com/in/shubham-patel-38b679176", url: "https://linkedin.com/in/shubham-patel-38b679176" },
-    { label: "Resume", value: "ShubhamPatel_Resume_2025", url: "./assets/ShubhamPatel_Resume_2025.pdf" }
+    { label: "Email", action: "Send message", url: "mailto:patelshubham152.ps@gmail.com" },
+    { label: "LinkedIn", action: "Open profile", url: "https://linkedin.com/in/shubham-patel-38b679176" },
+    { label: "Resume", action: "Open resume", url: "./assets/ShubhamPatel_Resume_2025.pdf" }
   ]
 };
 
@@ -267,7 +267,7 @@ function renderContacts() {
       (item) => `
         <a class="contact-link" href="${item.url}" target="_blank" rel="noreferrer">
           <strong>${item.label}</strong>
-          <span>${item.value}</span>
+          <span>${item.action}</span>
         </a>
       `
     )
