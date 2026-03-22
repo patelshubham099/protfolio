@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Patel | Engineering Portfolio</title>
+  <meta name="description" content="Engineering portfolio of Shubham Patel covering powertrain development, CAE, CAD, Baja SAE work, robotics, validation, and technical communication.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">Shubham Patel</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#areas">Areas</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-shell" id="overview">
+        <div class="hero-main">
+          <p class="eyebrow" id="hero-role">Mechanical Engineer</p>
+          <h1 id="hero-name">Shubham Patel</h1>
+          <p class="hero-summary" id="hero-summary"></p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#areas">Explore Work Areas</a>
+            <a class="secondary-link" href="#portfolio">View Projects</a>
+          </div>
+        </div>
+
+        <aside class="hero-side">
+          <div class="hero-portrait-wrap">
+            <img id="hero-portrait" alt="Portrait of Shubham Patel">
+          </div>
+          <div class="hero-facts" id="hero-facts"></div>
+        </aside>
+      </section>
+
+      <section class="overview-shell">
+        <div class="overview-copy">
+          <p class="section-kicker">Overview</p>
+          <h2>Work across drivetrain, analysis, design, and build reality.</h2>
+          <p id="intro-note"></p>
+        </div>
+        <div class="overview-grid" id="signal-list"></div>
+      </section>
+
+      <section class="areas-shell" id="areas">
+        <div class="section-headline compact">
+          <p class="section-kicker">Explore by Area</p>
+          <h2>Open one area and continue through the related work.</h2>
+          <p>Each button opens a detailed project view. From there, the next button continues to the closest related work and the last step brings you back to the beginning.</p>
+        </div>
+        <div class="area-ring" id="loop-ring">
+          <div class="area-center">
+            <strong>Engineering Work</strong>
+            <span>Connected project path</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase-shell">
+        <div class="section-headline compact">
+          <p class="section-kicker">Selected Visuals</p>
+          <h2>Project visuals that carry the work clearly.</h2>
+          <p>These are the strongest starting images for the detailed portfolio items below.</p>
+        </div>
+        <div class="feature-strip" id="feature-strip"></div>
+      </section>
+
+      <section class="focus-shell">
+        <div class="section-headline compact">
+          <p class="section-kicker">Core Strengths</p>
+          <h2>Main capability areas across the portfolio.</h2>
+          <p>These are the recurring strengths visible across the project work.</p>
+        </div>
+        <div class="focus-grid" id="focus-grid"></div>
+      </section>
+
+      <section class="portfolio-shell" id="portfolio">
+        <div class="portfolio-banner">
+          <p class="section-kicker">Portfolio</p>
+          <h2>Technical work and supporting strengths.</h2>
+          <p>Each card opens into project context, contribution points, references, and the next related step.</p>
+          <div class="portfolio-pills" id="portfolio-pills"></div>
+        </div>
+
+        <div class="portfolio-section">
+          <div class="section-headline compact">
+            <h3>Technical work</h3>
+            <p>Projects across mobility, analysis, design, robotics, manufacturing, and validation.</p>
+          </div>
+          <div class="card-grid" id="technical-grid"></div>
+        </div>
+
+        <div class="portfolio-section">
+          <div class="section-headline compact">
+            <h3>Supporting strengths</h3>
+            <p>Leadership, communication, academic rigor, and documentation that support the technical work.</p>
+          </div>
+          <div class="card-grid secondary-grid" id="secondary-grid"></div>
+        </div>
+      </section>
+
+      <section class="contact-shell" id="contact">
+        <div class="contact-copy">
+          <p class="section-kicker">Contact</p>
+          <h2>If you want to discuss the work, reach out.</h2>
+          <p id="contact-note"></p>
+        </div>
+        <div class="contact-list" id="contact-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="detail-modal" hidden>
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" id="modal-close" aria-label="Close">Close</button>
+      <div class="modal-layout">
+        <div class="modal-image-wrap" id="modal-image-wrap" data-fit="cover">
+          <img id="modal-image" alt="Detail visual">
+        </div>
+        <div class="modal-copy">
+          <p class="modal-kicker" id="modal-kicker"></p>
+          <h3 id="modal-title"></h3>
+          <p class="modal-tools" id="modal-tools"></p>
+          <p class="modal-summary" id="modal-summary"></p>
+          <ul class="modal-points" id="modal-points"></ul>
+          <div class="modal-links" id="modal-links"></div>
+          <button class="modal-next" type="button" id="modal-next"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

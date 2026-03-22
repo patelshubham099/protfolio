@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shubham Patel | Engineering Portfolio</title>
+  <meta name="description" content="Mechanical engineering portfolio of Shubham Patel focused on EV powertrain development, drivetrain analysis, CAE, CAD, validation, and build support.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#top">Shubham Patel</a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#projects">Projects</a>
+        <a href="#additional">Additional</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero-shell">
+        <div class="hero-copy">
+          <p class="eyebrow" id="hero-role">Mechanical Engineer</p>
+          <h1 id="hero-name">Shubham Patel</h1>
+          <p class="hero-summary" id="hero-summary"></p>
+          <div class="hero-tags" id="hero-tags"></div>
+          <div class="hero-actions">
+            <a class="primary-link" href="#projects">View Projects</a>
+            <a class="secondary-link" href="#contact">Contact</a>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <div class="hero-photo">
+            <img id="hero-portrait" alt="Portrait of Shubham Patel">
+          </div>
+          <div class="hero-facts" id="hero-facts"></div>
+        </aside>
+      </section>
+
+      <section class="section-shell" id="capabilities">
+        <div class="section-heading">
+          <p class="section-kicker">Capabilities</p>
+          <h2>Core engineering areas built through industry and Baja work.</h2>
+          <p>My work has mostly involved taking a system from analysis and packaging through to build reality, with emphasis on drivetrain behaviour, structural validation, and practical engineering decisions.</p>
+        </div>
+        <div class="strength-grid" id="strength-grid"></div>
+      </section>
+
+      <section class="section-shell" id="projects">
+        <div class="section-heading">
+          <p class="section-kicker">Projects</p>
+          <h2>Selected project work</h2>
+          <p>A focused set of projects that best represent the kind of engineering work I have done.</p>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section-shell muted-shell" id="additional">
+        <div class="section-heading">
+          <p class="section-kicker">Additional Experience</p>
+          <h2>Leadership, communication, and documentation.</h2>
+          <p>Supporting experience that strengthened delivery, coordination, and clarity in technical work.</p>
+        </div>
+        <div class="support-grid" id="support-grid"></div>
+      </section>
+
+      <section class="contact-shell" id="contact">
+        <div class="contact-copy">
+          <p class="section-kicker">Contact</p>
+          <h2>Available for engineering and product development discussions.</h2>
+          <p id="contact-note"></p>
+        </div>
+        <div class="contact-list" id="contact-list"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal" id="detail-modal" hidden>
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" type="button" id="modal-close" aria-label="Close">Close</button>
+      <div class="modal-layout">
+        <div class="modal-image-wrap" id="modal-image-wrap">
+          <img id="modal-image" alt="Project visual">
+        </div>
+        <div class="modal-copy">
+          <p class="modal-kicker" id="modal-kicker"></p>
+          <h3 id="modal-title"></h3>
+          <p class="modal-tools" id="modal-tools"></p>
+          <p class="modal-summary" id="modal-summary"></p>
+          <ul class="modal-points" id="modal-points"></ul>
+          <div class="modal-links" id="modal-links"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

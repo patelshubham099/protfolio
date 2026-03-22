@@ -1,0 +1,357 @@
+{
+  "profile": {
+    "role": "Application Engineer",
+    "name": "Shubham Patel",
+    "summary": "Mechanical engineer working across powertrain systems, CAE, product development, vehicle engineering, and design communication.",
+    "meta": [
+      "Bengaluru, India",
+      "SOLIZE India",
+      "Matter Motor Works",
+      "Silver Medalist, PDEU"
+    ],
+    "stats": [
+      { "value": "2+", "label": "Years in industry" },
+      { "value": "9.81", "label": "CPI at PDEU" },
+      { "value": "4", "label": "Core engineering tracks" }
+    ],
+    "contactNote": "Open to engineering, simulation, drivetrain, and product development opportunities across mobility and mechanical systems.",
+    "contacts": [
+      { "label": "Email", "value": "patelshubham152.ps@gmail.com", "url": "mailto:patelshubham152.ps@gmail.com" },
+      { "label": "Phone", "value": "+91 9624069783", "url": "tel:+919624069783" },
+      { "label": "LinkedIn", "value": "linkedin.com/in/shubham-patel-38b679176", "url": "https://linkedin.com/in/shubham-patel-38b679176" },
+      { "label": "Resume", "value": "ShubhamPatel_Resume_2025", "url": "./assets/ShubhamPatel_Resume_2025.pdf" }
+    ],
+    "portrait": {
+      "src": "./assets/custom/imageprofilr.jpg",
+      "alt": "Formal portrait of Shubham Patel in a dark suit and tie against a light background.",
+      "note": "A strong professional starting image. It reads clearly and feels dependable, though a future version with softer light or a more natural engineering setting could add more personality."
+    }
+  },
+  "technicalCards": [
+    {
+      "id": "powertrain-dev",
+      "category": "Mobility Systems",
+      "title": "Matter powertrain journey",
+      "tools": "Romax, Gearbox Design, Tolerance Stack-Up",
+      "image": "./assets/custom/matter bike.jpg",
+      "imageFit": "cover",
+      "layout": "feature",
+      "excerpt": "From the vehicle-level product context to the gearbox package and then into engineering release work.",
+      "summary": "This project reads best as a sequence, not a single card. The bike image gives the product context, the transmission package shows the engineering core, and the supporting points explain how the work moved from system intent to release-ready design decisions.",
+      "journeyTitle": "Vehicle to gearbox to release readiness",
+      "points": [
+        "Worked on the 4-speed gearbox for Matter Aera in Romax.",
+        "Connected drivetrain analysis with ratio selection, packaging, and release work.",
+        "Handled tolerance stack-up, DFM closure, and validation-linked engineering decisions.",
+        "Balanced product targets with manufacturability and reliability constraints."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/matter bike.jpg",
+          "alt": "Two Matter motorcycles positioned face to face outdoors.",
+          "caption": "This is a good opening image because it shows the real product context first. It immediately tells the viewer that the work is not abstract analysis alone, but part of a complete electric motorcycle program."
+        },
+        {
+          "src": "./assets/custom/transmission matter.jpg",
+          "alt": "Promotional drivetrain render of the Matter integrated motor and 4-speed transmission package.",
+          "caption": "This image works well as the second step in the story. After seeing the bike, the viewer moves into the actual transmission package and understands where the engineering depth sits."
+        }
+      ],
+      "links": [
+        { "label": "Matter Motor Works", "url": "https://www.matter.in/" }
+      ]
+    },
+    {
+      "id": "transmission-analysis",
+      "category": "Drivetrain Simulation",
+      "title": "Transmission analysis",
+      "tools": "Romax, Shafts, Bearings, Gears",
+      "image": "./assets/custom/transmission matter.jpg",
+      "imageFit": "contain",
+      "layout": "standard",
+      "excerpt": "System-level interpretation of gears, shafts, and bearings for strength, life, and efficiency.",
+      "summary": "This work focused on reading the drivetrain as an interacting system rather than as isolated parts. The value here is less in a flashy image and more in showing that the output supported engineering judgement before validation.",
+      "journeyTitle": "Inside the drivetrain logic",
+      "points": [
+        "Evaluated gears, shafts, and bearings together at system level.",
+        "Used strength, life, and efficiency outputs to support decisions.",
+        "Applied analysis to improve confidence before hardware validation."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/transmission matter.jpg",
+          "alt": "Integrated electric powertrain package with transmission housing shown in product render style.",
+          "caption": "The image is compact and technical, which fits the story well. It communicates integration, packaging discipline, and the idea that this work sits inside a real product architecture."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "cae-fea",
+      "category": "Simulation",
+      "title": "CAE and structural analysis",
+      "tools": "Siemens NX, ANSYS, Von Mises, FOS",
+      "image": "./assets/baja_doc_media/image34.png",
+      "imageFit": "contain",
+      "layout": "standard",
+      "excerpt": "Static and structural integrity analysis for mechanically critical Baja components.",
+      "summary": "This card shows the analysis side of the Baja work. It is useful because it demonstrates that the design decisions were supported by structural reasoning rather than only CAD packaging or fabrication intuition.",
+      "journeyTitle": "Analysis-led Baja decisions",
+      "points": [
+        "Analysed hubs, uprights, and structural members under combined loads.",
+        "Worked with 2D quad and 3D tetra element strategies.",
+        "Used stress, deformation, and FOS as evaluation outputs."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/baja_doc_media/image34.png",
+          "alt": "Finite element analysis visualization from Baja component study.",
+          "caption": "This is a technical proof image. It is not emotional, but it helps establish that the design process included proper simulation and engineering checks."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "atv-cad",
+      "category": "Vehicle Design",
+      "title": "ATV design and packaging",
+      "tools": "Siemens NX, Packaging, Roll Cage",
+      "image": "./assets/custom/baja cad file for atv.png",
+      "imageFit": "contain",
+      "layout": "wide",
+      "excerpt": "A clearer view of how driver packaging, roll cage logic, and subsystem integration came together in the Baja vehicle.",
+      "summary": "This is one of the better portfolio visuals because it reads quickly even for a non-specialist. You can see the driver package, suspension stance, roll cage, and vehicle architecture in one frame.",
+      "journeyTitle": "From package to vehicle intent",
+      "points": [
+        "Worked on ATV packaging and subsystem arrangement.",
+        "Supported roll cage and vehicle layout decisions.",
+        "Connected CAD work with build and validation needs."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/baja cad file for atv.png",
+          "alt": "Full CAD side view of the Baja ATV with driver model, frame, powertrain, and suspension visible.",
+          "caption": "This is a strong image because it explains a lot at once. It shows packaging quality, driver ergonomics, frame layout, and the overall engineering maturity of the Baja vehicle concept."
+        }
+      ],
+      "links": [
+        { "label": "Watch Team Car", "url": "https://youtu.be/NYkb9fxaxEs?si=JbQ8QjwCxLdfS5cS" }
+      ]
+    },
+    {
+      "id": "robot-design",
+      "category": "Robotics",
+      "title": "Firefighting robot journey",
+      "tools": "Mechanical Design, Mobility Layout, Packaging",
+      "image": "./assets/custom/finl model robot.jpg",
+      "imageFit": "contain",
+      "layout": "wide",
+      "excerpt": "A better story of the robot project from early tracked concepts to the final integrated firefighting platform.",
+      "summary": "This work benefits a lot from a sequence. The concept sketch shows exploration, the final model shows the resolved direction, and together they communicate actual design development rather than one frozen image.",
+      "journeyTitle": "Concept exploration to final robot model",
+      "points": [
+        "Explored alternative tracked layouts before freezing direction.",
+        "Worked on tracked mobility, suspension ideas, and component placement.",
+        "Integrated the water monitor, drive system, and controller packaging.",
+        "Studied power, torque, battery, and structural needs for the concept."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/design iterations robot.jpg",
+          "alt": "Hand-drawn concept sketches showing multiple tracked frame ideas for the firefighting robot.",
+          "caption": "This is a valuable image and should come first in the sequence. It shows thinking, comparison, and engineering iteration, which makes the final design feel earned rather than sudden."
+        },
+        {
+          "src": "./assets/custom/finl model robot.jpg",
+          "alt": "Final CAD concept of the tracked firefighting robot with mounted water monitor.",
+          "caption": "This is a strong follow-up image because it shows the chosen architecture clearly. The tracked base and water monitor make the use case immediately understandable."
+        },
+        {
+          "src": "./assets/custom/premiliery design robot.jpg",
+          "alt": "Preliminary robot design stage showing earlier CAD or concept development work.",
+          "caption": "This image works as the middle step between sketches and final design. It helps the viewer see progression in the project rather than only the endpoint."
+        }
+      ],
+      "links": [
+        { "label": "AAAG India", "url": "https://aaagindia.in/" }
+      ]
+    },
+    {
+      "id": "design-iterations",
+      "category": "Concept Work",
+      "title": "Design iteration mindset",
+      "tools": "Layout Exploration, Feasibility, Selection",
+      "image": "./assets/custom/design iterations robot.jpg",
+      "imageFit": "contain",
+      "layout": "standard",
+      "excerpt": "Concept comparison, elimination, and selection before committing to one practical path.",
+      "summary": "This is less a separate project and more an insight into how you work. It helps because it shows that your process includes comparison and rejection, not just execution.",
+      "journeyTitle": "How concepts get filtered",
+      "points": [
+        "Compared alternate layouts before freezing direction.",
+        "Used engineering constraints to eliminate weaker concepts.",
+        "Balanced packaging, traction, and structural practicality."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/design iterations robot.jpg",
+          "alt": "Sketch sheet of multiple alternative tracked undercarriage concepts.",
+          "caption": "This image says something important about your process: you did not jump straight to one answer. You explored options and selected a direction using constraints, not guesswork."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "manufacturing-exposure",
+      "category": "Build and Release",
+      "title": "Manufacturing exposure",
+      "tools": "Machining, CNC, Welding, Shop-Floor Work",
+      "image": "./assets/baja_ppt_media/image57.png",
+      "imageFit": "cover",
+      "layout": "standard",
+      "excerpt": "Design choices informed by what can actually be fabricated, assembled, and released.",
+      "summary": "This card represents the practical side of your engineering. It helps balance the portfolio because it shows that simulation and CAD were not isolated from fabrication reality.",
+      "journeyTitle": "From design intent to build reality",
+      "points": [
+        "Supported jigs, fixtures, and manufacturing planning in Baja work.",
+        "Exposure to machining, welding, and CNC-oriented workflows.",
+        "Worked with supplier and process considerations in industry roles."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/baja_ppt_media/image57.png",
+          "alt": "Manufacturing or shop-floor related project image from Baja presentation material.",
+          "caption": "This image adds practical weight to the portfolio. It shows that your work does not end at the screen and has a real connection to fabrication and release."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "vehicle-dynamics-testing",
+      "category": "Validation",
+      "title": "Vehicle testing and data",
+      "tools": "Accelerometers, Endurance Data, ADAMS",
+      "image": "./assets/baja_doc_media/image25.png",
+      "imageFit": "contain",
+      "layout": "standard",
+      "excerpt": "Simulation and test feedback used together to understand real vehicle behaviour.",
+      "summary": "This card helps close the design loop. It shows that the work was not only designed and analysed, but also read through test logic and dynamic behaviour.",
+      "journeyTitle": "Simulation meeting test feedback",
+      "points": [
+        "Interpreted test-oriented data to understand vehicle behaviour.",
+        "Used simulation and testing logic together.",
+        "Built engineering judgement around dynamic response and performance."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/baja_doc_media/image25.png",
+          "alt": "Vehicle testing or data-driven analysis visual from Baja report material.",
+          "caption": "This image supports the story that the design process included validation and interpretation, not only concept and modelling work."
+        }
+      ],
+      "links": []
+    }
+  ],
+  "secondaryCards": [
+    {
+      "id": "baja-leadership",
+      "category": "Leadership",
+      "title": "Team Czar leadership",
+      "tools": "Analysis Head, Planning, Coordination",
+      "image": "./assets/custom/medal recieved.jpg",
+      "imageFit": "cover",
+      "excerpt": "Technical ownership backed by planning, coordination, and competition-focused teamwork.",
+      "summary": "This card works best as evidence of ownership rather than just achievement. It shows that you were not only contributing technically, but also helping move the team toward readiness and direction.",
+      "journeyTitle": "Ownership inside the team",
+      "points": [
+        "Led analysis work for the Baja team in the 2021 cycle.",
+        "Supported planning, testing, and manufacturing coordination.",
+        "Worked on gearbox and differential calculations as part of the role."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/medal recieved.jpg",
+          "alt": "Recognition or award photograph connected to academic or team achievement.",
+          "caption": "A recognition image works well here because it gives a human endpoint to the technical journey. It suggests trust, effort, and accountability inside the team structure."
+        }
+      ],
+      "links": [
+        { "label": "Watch Team Car", "url": "https://youtu.be/NYkb9fxaxEs?si=JbQ8QjwCxLdfS5cS" }
+      ]
+    },
+    {
+      "id": "technical-teaching",
+      "category": "Communication",
+      "title": "Technical teaching",
+      "tools": "Fluid Mechanics, MATLAB, Machine Design",
+      "image": "./assets/custom/imageprofilr.jpg",
+      "imageFit": "cover",
+      "excerpt": "Explaining difficult engineering topics clearly through live sessions and problem solving.",
+      "summary": "This card rounds out the portfolio because it shows that your technical profile is not only analytical but also communicative. That matters in collaborative engineering environments.",
+      "journeyTitle": "Technical depth with clarity",
+      "points": [
+        "Worked across Fluid Mechanics, Strength of Materials, and MATLAB.",
+        "Improved clarity in explaining technical concepts.",
+        "Built confidence in collaborative and client-facing communication."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/imageprofilr.jpg",
+          "alt": "Professional portrait of Shubham Patel.",
+          "caption": "As a portrait, this is a good and safe starting point. It is clear, formal, and professional. Later, you could add a second image of you in a workshop, with a vehicle, or during a presentation to make the portfolio feel more alive."
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": "awards-recognition",
+      "category": "Academic Strength",
+      "title": "Awards and recognition",
+      "tools": "PDEU, Silver Medal, Academic Performance",
+      "image": "./assets/custom/medal recieved.jpg",
+      "imageFit": "cover",
+      "excerpt": "High academic consistency backed by a strong analytical foundation.",
+      "summary": "This section gives credibility to the analytical side of the portfolio and makes the progression from academics to industry feel stronger.",
+      "journeyTitle": "Academic foundation",
+      "points": [
+        "Silver Medalist at PDEU.",
+        "CPI 9.81 out of 10.",
+        "Strong grounding in design, analysis, and mechanical systems."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/medal recieved.jpg",
+          "alt": "Photograph associated with academic recognition or medal achievement.",
+          "caption": "This image works as proof of recognition, but it is stronger when paired with the actual academic achievement details, which the card already does."
+        }
+      ],
+      "links": [
+        { "label": "PDEU", "url": "https://admission.pdeu.ac.in/" }
+      ]
+    },
+    {
+      "id": "documentation-presentation",
+      "category": "Documentation",
+      "title": "Documentation and presentation",
+      "tools": "Reports, Technical Slides, Project Communication",
+      "image": "./assets/custom/premiliery design robot.jpg",
+      "imageFit": "contain",
+      "excerpt": "Turning engineering work into reports, slide decks, and structured technical communication.",
+      "summary": "This is useful because it shows that the work can be communicated well, not only performed. That matters a lot in reviews, handoffs, and collaborative product development.",
+      "journeyTitle": "Making engineering understandable",
+      "points": [
+        "Worked on project reports and evaluation material.",
+        "Presented design and analysis content in competition and academic settings.",
+        "Comfortable turning technical work into structured communication."
+      ],
+      "gallery": [
+        {
+          "src": "./assets/custom/premiliery design robot.jpg",
+          "alt": "Preliminary robot design image used in documentation or presentation work.",
+          "caption": "This image helps because it feels like working material rather than a final polished graphic. It supports the idea that you can document engineering progress clearly."
+        }
+      ],
+      "links": []
+    }
+  ]
+}
