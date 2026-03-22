@@ -1,4 +1,4 @@
-﻿:root {
+:root {
   --bg: #11181c;
   --bg-soft: #182126;
   --panel: #1b242a;
@@ -492,7 +492,9 @@ button { font: inherit; }
 
 @media (max-width: 640px) {
   .page-shell {
-    width: min(100% - 1rem, 1120px);
+    width: 100%;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .site-header {
@@ -508,4 +510,47 @@ button { font: inherit; }
   .modal-copy h3 {
     font-size: 2rem;
   }
+
+  .strength-grid,
+  .support-grid,
+  .project-grid,
+  .contact-list {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-shell,
+  .contact-shell {
+    padding: 1rem;
+  }
+
+  .section-shell {
+    padding: 1rem;
+  }
+
+  .nav-links {
+    gap: 0.6rem;
+  }
+
+  .nav-links a {
+    font-size: 0.82rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-tag {
+    font-size: 0.75rem;
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
