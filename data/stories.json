@@ -21,9 +21,9 @@
       "id": "build-reality-in-cad",
       "category": "Execution",
       "date": "March 2026",
-      "title": "Why build reality should affect CAD early",
+      "title": "Why build reality should affect design early",
       "excerpt": "Packaging work gets better when fabrication, assembly, and access are considered from the start.",
-      "summary": "Some of the best CAD decisions are not about cleaner geometry. They are about reducing pain later in build, assembly, and validation.",
+      "summary": "Some of the best design decisions are not about cleaner geometry. They are about reducing pain later in build, assembly, and validation.",
       "takeaways": [
         "Packaging quality is stronger when assembly and serviceability are considered early.",
         "Build constraints often improve design judgement rather than limit it.",
@@ -42,7 +42,7 @@
       "excerpt": "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
       "summary": "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
       "takeaways": [
-        "CAD, CAE, build, and testing make more sense when treated as one loop.",
+        "Design, analysis, build, and testing make more sense when treated as one loop.",
         "Competition projects teach ownership because design choices show up quickly in reality.",
         "The fastest way to improve judgement is to stay close to both analysis and hardware."
       ],
@@ -53,4 +53,5 @@
     }
   ]
 }
+
 

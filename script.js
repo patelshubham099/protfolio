@@ -1,13 +1,13 @@
-﻿const SITE_VERSION = "20260331a";
+﻿const SITE_VERSION = "20260331b";
 
 const profileData = {
   hero: {
     role: "Mechanical Engineer | 3 Years Experience",
     name: "Shubham Patel",
     summary:
-      "Mechanical engineer with experience across EV powertrain development, drivetrain analysis, process engineering, validation, CAD packaging, and build-facing execution. My work has usually sat between simulation, design, release, and test follow-up, turning technical findings into workable engineering decisions.",
+      "Mechanical engineer with experience across EV powertrain development, drivetrain analysis, release support, structural validation, vehicle integration, and build-facing execution. My work has largely sat between simulation, design updates, validation follow-up, and execution support, turning technical findings into practical engineering decisions.",
     portrait: "./assets/custom/imageprofilr.jpg",
-    tags: ["EV Powertrain", "Drivetrain Analysis", "Process Engineering", "CAD and Validation"],
+    tags: ["Powertrain Development", "Drivetrain Analysis", "Release Support", "Design Validation"],
     facts: [
       { label: "Based in", value: "Bengaluru, India" },
       { label: "Current role", value: "Ather Energy" },
@@ -16,19 +16,19 @@ const profileData = {
   },
   strengths: [
     {
-      title: "Powertrain Development and Transmission Engineering",
+      title: "Powertrain Development and Transmission Support",
       text: "Gearbox modelling, ratio studies, stack-up decisions, and engineering support tied to EV transmission behaviour and product targets."
     },
     {
-      title: "Drivetrain Analysis and CAE Validation",
+      title: "Drivetrain Analysis and Structural Validation",
       text: "System-level interpretation of shafts, gears, bearings, and structural loads to support durability, efficiency, and validation planning."
     },
     {
-      title: "Process Engineering and Release Closure",
-      text: "Tolerance stack-up, drawing support, DFM and RCA closure, validation follow-up, and the practical coordination needed to move work toward release."
+      title: "Engineering Release and Validation Support",
+      text: "Tolerance stack-up, drawing support, DFM and RCA closure, validation follow-up, and practical coordination to move engineering work toward release."
     },
     {
-      title: "CAD Packaging and Build Readiness",
+      title: "Vehicle Integration and Build Readiness",
       text: "Vehicle layout, subsystem integration, packaging discipline, and build-aware engineering shaped by manufacturing and assembly constraints."
     }
   ],
@@ -56,7 +56,7 @@ const profileData = {
     {
       id: "transmission-analysis",
       category: "Drivetrain Analysis",
-      title: "Transmission analysis in Romax",
+      title: "Transmission analysis",
       tools: "Romax, Shafts, Bearings, Gears",
       image: "./assets/custom/transmission matter.jpg",
       imageFit: "contain",
@@ -72,14 +72,14 @@ const profileData = {
     },
     {
       id: "process-release",
-      category: "Process Engineering",
-      title: "Process engineering and release closure",
+      category: "Release and Execution",
+      title: "Release support and issue closure",
       tools: "Tolerance Stack-Up, DFM, RCA, Release Support",
       image: "./assets/baja_ppt_media/image57.png",
       imageFit: "cover",
-      excerpt: "The process side of engineering work: closure, coordination, and getting decisions ready for execution.",
+      excerpt: "Engineering support around closure, coordination, and getting decisions ready for execution.",
       summary:
-        "A useful part of my work has been on the process side of engineering, where analysis and design work have to be carried through drawing updates, DFM checks, RCA closure, validation follow-up, and release-oriented coordination.",
+        "A useful part of my work has been carrying analysis and design work through drawing updates, DFM checks, RCA closure, validation follow-up, and release-oriented coordination.",
       points: [
         "Worked on tolerance stack-up and drawing-related engineering support.",
         "Supported DFM and issue-closure activity during validation phases.",
@@ -90,14 +90,14 @@ const profileData = {
     },
     {
       id: "cae-fea",
-      category: "CAE and Validation",
-      title: "CAE and structural verification",
+      category: "Structural Validation",
+      title: "Structural analysis and verification",
       tools: "Siemens NX, ANSYS, Von Mises, FOS",
       image: "./assets/baja_doc_media/image34.png",
       imageFit: "contain",
       excerpt: "Structural checks for components that had to withstand realistic vehicle loads.",
       summary:
-        "My Baja CAE work covered component loading, meshing choices, deformation checks, and factor-of-safety review for parts that had to survive actual vehicle conditions.",
+        "My Baja analysis work covered component loading, meshing choices, deformation checks, and factor-of-safety review for parts that had to survive actual vehicle conditions.",
       points: [
         "Analysed hubs, uprights, and structural members under combined loads.",
         "Worked with 2D quad and 3D tetra element strategies.",
@@ -108,17 +108,17 @@ const profileData = {
     {
       id: "atv-cad",
       category: "Vehicle Design",
-      title: "Baja ATV design and packaging",
+      title: "Vehicle packaging and integration",
       tools: "Siemens NX, Packaging, Roll Cage",
       image: "./assets/custom/baja cad file for atv.png",
       imageFit: "contain",
       excerpt: "ATV packaging and subsystem integration with safety, space, and build constraints in mind.",
       summary:
-        "In Team Czar, I worked on Baja ATV layout and CAD with attention to driver packaging, roll cage logic, subsystem placement, and the connection between design, analysis, manufacturing, and testing.",
+        "In Team Czar, I worked on Baja ATV layout and 3D integration with attention to driver packaging, roll cage logic, subsystem placement, and the connection between design, analysis, manufacturing, and testing.",
       points: [
         "Worked on ATV packaging and subsystem arrangement.",
         "Supported roll cage and vehicle layout decisions.",
-        "Connected CAD work with downstream build and validation needs."
+        "Connected layout work with downstream build and validation needs."
       ],
       links: [
         { label: "Watch Team Car", url: "https://youtu.be/NYkb9fxaxEs?si=JbQ8QjwCxLdfS5cS" }
@@ -150,7 +150,7 @@ const profileData = {
       text: "Worked across analysis, design, validation, manufacturing, and release-oriented discussions rather than staying limited to one isolated engineering step."
     },
     {
-      title: "Documentation and Design Reviews",
+      title: "Documentation and Design Review Support",
       text: "Prepared engineering reports, drawing support material, and technical communication that helped reviews move faster and with more clarity."
     },
     {
@@ -163,7 +163,7 @@ const profileData = {
     }
   ],
   contactNote:
-    "If the conversation is around powertrain systems, drivetrain analysis, CAD, validation, or engineering execution, feel free to reach out.",
+    "If the conversation is around powertrain systems, drivetrain analysis, structural validation, vehicle integration, or engineering execution, feel free to reach out.",
   contacts: [
     { label: "Email", action: "Send message", url: "mailto:patelshubham152.ps@gmail.com" },
     { label: "LinkedIn", action: "Open profile", url: "https://linkedin.com/in/shubham-patel-38b679176" },
@@ -194,10 +194,10 @@ const fallbackStories = [
     id: "build-reality-in-cad",
     category: "Execution",
     date: "March 2026",
-    title: "Why build reality should affect CAD early",
+    title: "Why build reality should affect design early",
     excerpt: "Packaging work gets better when fabrication, assembly, and access are considered from the start.",
     summary:
-      "Some of the best CAD decisions are not about cleaner geometry. They are about reducing pain later in build, assembly, and validation.",
+      "Some of the best design decisions are not about cleaner geometry. They are about reducing pain later in build, assembly, and validation.",
     takeaways: [
       "Packaging quality is stronger when assembly and serviceability are considered early.",
       "Build constraints often improve design judgement rather than limit it.",
@@ -217,7 +217,7 @@ const fallbackStories = [
     summary:
       "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
     takeaways: [
-      "CAD, CAE, build, and testing make more sense when treated as one loop.",
+      "Design, analysis, build, and testing make more sense when treated as one loop.",
       "Competition projects teach ownership because design choices show up quickly in reality.",
       "The fastest way to improve judgement is to stay close to both analysis and hardware."
     ],
@@ -495,4 +495,7 @@ async function init() {
 }
 
 init();
+
+
+
 
