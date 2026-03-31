@@ -1,46 +1,48 @@
-﻿const profileData = {
+﻿const SITE_VERSION = "20260331a";
+
+const profileData = {
   hero: {
     role: "Mechanical Engineer | 3 Years Experience",
     name: "Shubham Patel",
     summary:
-      "Mechanical engineer with experience across EV powertrain development, drivetrain analysis, CAE-led design validation, vehicle CAD, Baja programs, and build-oriented engineering. My work has mainly involved turning analysis into practical design decisions, from gearbox modelling and tolerance stack-up to structural checks, packaging, and technical documentation.",
+      "Mechanical engineer with experience across EV powertrain development, drivetrain analysis, process engineering, validation, CAD packaging, and build-facing execution. My work has usually sat between simulation, design, release, and test follow-up, turning technical findings into workable engineering decisions.",
     portrait: "./assets/custom/imageprofilr.jpg",
-    tags: ["EV Powertrain Development", "Drivetrain Analysis", "CAE Validation", "Vehicle CAD"],
+    tags: ["EV Powertrain", "Drivetrain Analysis", "Process Engineering", "CAD and Validation"],
     facts: [
       { label: "Based in", value: "Bengaluru, India" },
       { label: "Current role", value: "Ather Energy" },
-      { label: "Background", value: "Mechanical Engineering, PDEU" }
+      { label: "Earlier exposure", value: "Matter Motor Works and Solize" }
     ]
   },
   strengths: [
     {
-      title: "EV Powertrain and Transmission Development",
-      text: "Gearbox modelling, ratio selection, tolerance stack-up, design support, and release-linked engineering for electric mobility systems."
+      title: "Powertrain Development and Transmission Engineering",
+      text: "Gearbox modelling, ratio studies, stack-up decisions, and engineering support tied to EV transmission behaviour and product targets."
     },
     {
-      title: "Drivetrain Analysis and Design Validation",
-      text: "System-level interpretation of gears, shafts, and bearings to support durability, efficiency, and reliability before hardware validation."
+      title: "Drivetrain Analysis and CAE Validation",
+      text: "System-level interpretation of shafts, gears, bearings, and structural loads to support durability, efficiency, and validation planning."
     },
     {
-      title: "CAE and Structural Verification",
-      text: "Finite element analysis, load-case definition, deformation checks, and factor-of-safety review for mechanically critical components."
+      title: "Process Engineering and Release Closure",
+      text: "Tolerance stack-up, drawing support, DFM and RCA closure, validation follow-up, and the practical coordination needed to move work toward release."
     },
     {
-      title: "Vehicle CAD, Packaging, and Build Support",
-      text: "Packaging, layout, subsystem integration, manufacturing exposure, and engineering decisions shaped by testing and build reality."
+      title: "CAD Packaging and Build Readiness",
+      text: "Vehicle layout, subsystem integration, packaging discipline, and build-aware engineering shaped by manufacturing and assembly constraints."
     }
   ],
   projects: [
     {
       id: "powertrain-dev",
       category: "Mobility Systems",
-      title: "EV Powertrain Development",
+      title: "EV powertrain development",
       tools: "Romax, Gearbox Design, Tolerance Stack-Up",
       image: "./assets/custom/matter bike.jpg",
       imageFit: "cover",
-      excerpt: "Transmission development work tied to validation, release, and product decisions.",
+      excerpt: "Transmission development work connected to validation, release, and product decisions.",
       summary:
-        "At Matter, I worked on the 4-speed transmission for the Aera platform. The work covered Romax modelling, ratio studies, tolerance stack-up, drawing support, and follow-up during validation and release activity.",
+        "At Matter, I worked on transmission-focused development for the Aera platform. The work covered Romax modelling, ratio studies, tolerance stack-up, drawing support, and engineering follow-up linked to validation and release activity.",
       points: [
         "Modelled the 4-speed gearbox for Matter Aera in Romax.",
         "Worked on gear ratio selection and drivetrain behaviour.",
@@ -54,7 +56,7 @@
     {
       id: "transmission-analysis",
       category: "Drivetrain Analysis",
-      title: "Transmission Analysis in Romax",
+      title: "Transmission analysis in Romax",
       tools: "Romax, Shafts, Bearings, Gears",
       image: "./assets/custom/transmission matter.jpg",
       imageFit: "contain",
@@ -69,9 +71,27 @@
       links: []
     },
     {
+      id: "process-release",
+      category: "Process Engineering",
+      title: "Process engineering and release closure",
+      tools: "Tolerance Stack-Up, DFM, RCA, Release Support",
+      image: "./assets/baja_ppt_media/image57.png",
+      imageFit: "cover",
+      excerpt: "The process side of engineering work: closure, coordination, and getting decisions ready for execution.",
+      summary:
+        "A useful part of my work has been on the process side of engineering, where analysis and design work have to be carried through drawing updates, DFM checks, RCA closure, validation follow-up, and release-oriented coordination.",
+      points: [
+        "Worked on tolerance stack-up and drawing-related engineering support.",
+        "Supported DFM and issue-closure activity during validation phases.",
+        "Connected engineering decisions with release and execution needs.",
+        "Worked with supplier, manufacturing, and practical process constraints."
+      ],
+      links: []
+    },
+    {
       id: "cae-fea",
       category: "CAE and Validation",
-      title: "CAE and Structural Validation",
+      title: "CAE and structural verification",
       tools: "Siemens NX, ANSYS, Von Mises, FOS",
       image: "./assets/baja_doc_media/image34.png",
       imageFit: "contain",
@@ -88,13 +108,13 @@
     {
       id: "atv-cad",
       category: "Vehicle Design",
-      title: "Baja ATV Design and Packaging",
+      title: "Baja ATV design and packaging",
       tools: "Siemens NX, Packaging, Roll Cage",
       image: "./assets/custom/baja cad file for atv.png",
       imageFit: "contain",
-      excerpt: "ATV packaging and subsystem integration with safety and performance in mind.",
+      excerpt: "ATV packaging and subsystem integration with safety, space, and build constraints in mind.",
       summary:
-        "In Team Czar, I worked on Baja ATV layout and CAD with attention to driver packaging, roll cage logic, subsystem placement, and the link between design, analysis, manufacturing, and testing.",
+        "In Team Czar, I worked on Baja ATV layout and CAD with attention to driver packaging, roll cage logic, subsystem placement, and the connection between design, analysis, manufacturing, and testing.",
       points: [
         "Worked on ATV packaging and subsystem arrangement.",
         "Supported roll cage and vehicle layout decisions.",
@@ -107,11 +127,11 @@
     {
       id: "robot-design",
       category: "Robotics",
-      title: "Firefighting Robot Design",
+      title: "Firefighting robot design",
       tools: "Mechanical Design, Mobility Layout, Packaging",
       image: "./assets/custom/finl model robot.jpg",
       imageFit: "contain",
-      excerpt: "Tracked firefighting robot concept developed for industrial hazard use cases.",
+      excerpt: "Tracked firefighting robot concept developed from exploration through final integrated layout.",
       summary:
         "This final-year project focused on a remote-controlled firefighting robot for industrial use. I worked through tracked mobility concepts, packaging, power and torque checks, and the final integrated layout.",
       points: [
@@ -122,51 +142,91 @@
       links: [
         { label: "AAAG India", url: "https://aaagindia.in/" }
       ]
-    },
-    {
-      id: "manufacturing-exposure",
-      category: "Build Support",
-      title: "Manufacturing and Build Support",
-      tools: "Machining, CNC, Welding, Shop-Floor Work",
-      image: "./assets/baja_ppt_media/image57.png",
-      imageFit: "cover",
-      excerpt: "Design decisions informed by fabrication, fixtures, machining, and build reality.",
-      summary:
-        "Alongside design and simulation, I have worked close to manufacturing workflows including jigs and fixtures, machining exposure, supplier coordination, and the practical constraints that shape released hardware.",
-      points: [
-        "Supported jigs, fixtures, and manufacturing planning in Baja work.",
-        "Exposure to machining, welding, and CNC-oriented workflows.",
-        "Worked with supplier and process considerations in industry roles."
-      ],
-      links: []
     }
   ],
   support: [
     {
-      title: "Team Leadership and Coordination",
-      text: "Progressed from contributor to Analysis Department Head in Team Czar, balancing technical ownership with planning and coordination."
+      title: "Cross-Functional Coordination",
+      text: "Worked across analysis, design, validation, manufacturing, and release-oriented discussions rather than staying limited to one isolated engineering step."
     },
     {
-      title: "Technical Communication",
-      text: "Explained mechanical engineering topics through live sessions and problem solving work, which strengthened clarity in technical discussions."
+      title: "Documentation and Design Reviews",
+      text: "Prepared engineering reports, drawing support material, and technical communication that helped reviews move faster and with more clarity."
     },
     {
-      title: "Engineering Documentation",
-      text: "Worked on reports, evaluation material, and technical presentations that made the engineering easier to review and communicate."
+      title: "Build and Validation Follow-Up",
+      text: "Stayed close to the practical side of execution through manufacturing exposure, validation closure, and issue-tracking linked to real hardware outcomes."
     },
     {
-      title: "Academic Foundation",
-      text: "Silver Medal at PDEU with a CPI of 9.81, reflecting a strong analytical base in mechanical engineering."
+      title: "Leadership and Technical Communication",
+      text: "Progressed into ownership roles in Team Czar and built confidence in explaining engineering work clearly in team, academic, and problem-solving settings."
     }
   ],
   contactNote:
-    "Available for conversations around powertrain, drivetrain analysis, CAE, CAD, validation, and broader product development work.",
+    "If the conversation is around powertrain systems, drivetrain analysis, CAD, validation, or engineering execution, feel free to reach out.",
   contacts: [
     { label: "Email", action: "Send message", url: "mailto:patelshubham152.ps@gmail.com" },
     { label: "LinkedIn", action: "Open profile", url: "https://linkedin.com/in/shubham-patel-38b679176" },
     { label: "Resume", action: "Open resume", url: "./assets/ShubhamPatel_Resume_2025.pdf" }
   ]
 };
+
+const fallbackStories = [
+  {
+    id: "analysis-to-decision",
+    category: "Powertrain",
+    date: "March 2026",
+    title: "When analysis needs to change a design",
+    excerpt: "Simulation becomes useful only when it pushes a design or release decision forward.",
+    summary:
+      "A large part of my drivetrain work has been less about generating outputs and more about deciding what those outputs should change.",
+    takeaways: [
+      "The value of Romax is in the decision it supports, not the report it generates.",
+      "Stack-up and validation follow-up matter because they connect theory to release reality.",
+      "Good analysis shortens decision time when it is tied to design actions."
+    ],
+    content: [
+      "I have found that analysis work becomes meaningful only when it changes the next engineering step. If a model is accurate but does not help with ratio selection, stack-up, closure, or validation planning, it stays academic.",
+      "In drivetrain work, the useful question is usually not whether the model is detailed enough. The useful question is whether the result is clear enough for the team to act on. That shift in thinking makes the work more practical and more valuable."
+    ]
+  },
+  {
+    id: "build-reality-in-cad",
+    category: "Execution",
+    date: "March 2026",
+    title: "Why build reality should affect CAD early",
+    excerpt: "Packaging work gets better when fabrication, assembly, and access are considered from the start.",
+    summary:
+      "Some of the best CAD decisions are not about cleaner geometry. They are about reducing pain later in build, assembly, and validation.",
+    takeaways: [
+      "Packaging quality is stronger when assembly and serviceability are considered early.",
+      "Build constraints often improve design judgement rather than limit it.",
+      "Practical exposure changes how clean or useful a model really is."
+    ],
+    content: [
+      "Baja and project work made this clear to me very early. A layout can look resolved on screen and still create avoidable friction during fabrication or assembly.",
+      "That is why I value build-facing engineering. It forces better decisions on spacing, access, manufacturability, and the overall maturity of the design."
+    ]
+  },
+  {
+    id: "baja-engineering-loop",
+    category: "Learning",
+    date: "March 2026",
+    title: "What Baja taught me about the engineering loop",
+    excerpt: "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
+    summary:
+      "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
+    takeaways: [
+      "CAD, CAE, build, and testing make more sense when treated as one loop.",
+      "Competition projects teach ownership because design choices show up quickly in reality.",
+      "The fastest way to improve judgement is to stay close to both analysis and hardware."
+    ],
+    content: [
+      "In Baja work, the design could not stay isolated from analysis, and analysis could not stay isolated from build. Each phase exposed something about the others.",
+      "That experience shaped how I now think about engineering work. I prefer roles where the technical task is connected to validation, practical constraints, and the larger product outcome."
+    ]
+  }
+];
 
 const elements = {
   heroRole: document.getElementById("hero-role"),
@@ -178,6 +238,7 @@ const elements = {
   strengthGrid: document.getElementById("strength-grid"),
   projectGrid: document.getElementById("project-grid"),
   supportGrid: document.getElementById("support-grid"),
+  storyGrid: document.getElementById("story-grid"),
   contactNote: document.getElementById("contact-note"),
   contactList: document.getElementById("contact-list"),
   modal: document.getElementById("detail-modal"),
@@ -189,10 +250,19 @@ const elements = {
   modalImage: document.getElementById("modal-image"),
   modalSummary: document.getElementById("modal-summary"),
   modalPoints: document.getElementById("modal-points"),
-  modalLinks: document.getElementById("modal-links")
+  modalLinks: document.getElementById("modal-links"),
+  storyModal: document.getElementById("story-modal"),
+  storyModalClose: document.getElementById("story-modal-close"),
+  storyModalKicker: document.getElementById("story-modal-kicker"),
+  storyModalTitle: document.getElementById("story-modal-title"),
+  storyModalMeta: document.getElementById("story-modal-meta"),
+  storyModalSummary: document.getElementById("story-modal-summary"),
+  storyModalTakeaways: document.getElementById("story-modal-takeaways"),
+  storyModalContent: document.getElementById("story-modal-content")
 };
 
 const projectMap = new Map();
+const storyMap = new Map();
 
 function renderHero() {
   elements.heroRole.textContent = profileData.hero.role;
@@ -274,6 +344,24 @@ function renderContacts() {
     .join("");
 }
 
+function buildStoryCard(story) {
+  storyMap.set(story.id, story);
+
+  return `
+    <article class="story-card" data-story-id="${story.id}" role="button" tabindex="0" aria-label="Open story ${story.title}">
+      <p class="project-category">${story.category}</p>
+      <h3>${story.title}</h3>
+      <p class="story-meta">${story.date}</p>
+      <p class="story-excerpt">${story.excerpt}</p>
+      <span class="story-action">Read note</span>
+    </article>
+  `;
+}
+
+function renderStories(stories) {
+  elements.storyGrid.innerHTML = stories.map((story) => buildStoryCard(story)).join("");
+}
+
 function openModal(projectId) {
   const project = projectMap.get(projectId);
   if (!project) {
@@ -298,7 +386,51 @@ function openModal(projectId) {
 
 function closeModal() {
   elements.modal.hidden = true;
-  document.body.style.overflow = "";
+  document.body.style.overflow = elements.storyModal.hidden ? "" : "hidden";
+}
+
+function openStoryModal(storyId) {
+  const story = storyMap.get(storyId);
+  if (!story) {
+    return;
+  }
+
+  elements.storyModalKicker.textContent = story.category;
+  elements.storyModalTitle.textContent = story.title;
+  elements.storyModalMeta.textContent = story.date;
+  elements.storyModalSummary.textContent = story.summary;
+  elements.storyModalTakeaways.innerHTML = (story.takeaways || []).map((point) => `<li>${point}</li>`).join("");
+  elements.storyModalContent.innerHTML = (story.content || []).map((paragraph) => `<p>${paragraph}</p>`).join("");
+
+  elements.storyModal.hidden = false;
+  document.body.style.overflow = "hidden";
+}
+
+function closeStoryModal() {
+  elements.storyModal.hidden = true;
+  document.body.style.overflow = elements.modal.hidden ? "" : "hidden";
+}
+
+async function loadStories() {
+  if (window.location.protocol === "file:") {
+    return fallbackStories;
+  }
+
+  try {
+    const response = await fetch(`./data/stories.json?v=${SITE_VERSION}`, { cache: "no-store" });
+    if (!response.ok) {
+      throw new Error("Story file was not available.");
+    }
+
+    const payload = await response.json();
+    if (Array.isArray(payload.stories) && payload.stories.length > 0) {
+      return payload.stories;
+    }
+  } catch (error) {
+    console.warn("Using fallback stories.", error);
+  }
+
+  return fallbackStories;
 }
 
 function attachEvents() {
@@ -309,8 +441,19 @@ function attachEvents() {
       return;
     }
 
+    const storyCard = event.target.closest("[data-story-id]");
+    if (storyCard) {
+      openStoryModal(storyCard.dataset.storyId);
+      return;
+    }
+
     if (event.target.closest("[data-close='true']") || event.target === elements.modalClose) {
       closeModal();
+      return;
+    }
+
+    if (event.target.closest("[data-story-close='true']") || event.target === elements.storyModalClose) {
+      closeStoryModal();
     }
   });
 
@@ -322,19 +465,34 @@ function attachEvents() {
       return;
     }
 
-    if (event.key === "Escape" && !elements.modal.hidden) {
-      closeModal();
+    const storyCard = event.target.closest("[data-story-id]");
+    if (storyCard && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+      openStoryModal(storyCard.dataset.storyId);
+      return;
+    }
+
+    if (event.key === "Escape") {
+      if (!elements.modal.hidden) {
+        closeModal();
+      }
+
+      if (!elements.storyModal.hidden) {
+        closeStoryModal();
+      }
     }
   });
 }
 
-function init() {
+async function init() {
   renderHero();
   renderStrengths();
   renderProjects();
   renderSupport();
   renderContacts();
+  renderStories(await loadStories());
   attachEvents();
 }
 
 init();
+

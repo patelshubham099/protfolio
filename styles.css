@@ -75,7 +75,7 @@ button { font: inherit; }
 }
 
 .hero-shell {
-  grid-template-columns: minmax(0, 1fr) 260px;
+  grid-template-columns: minmax(0, 1fr) 300px;
 }
 
 .contact-shell {
@@ -153,18 +153,20 @@ button { font: inherit; }
 
 .hero-copy h1,
 .section-heading h2,
-.modal-copy h3 {
+.modal-copy h3,
+.story-modal-copy h3 {
   margin: 0;
   line-height: 0.96;
 }
 
 .hero-copy h1 {
-  font-size: clamp(3rem, 5vw, 4.3rem);
+  font-size: clamp(3rem, 5vw, 4.2rem);
 }
 
 .section-heading h2,
-.modal-copy h3 {
-  font-size: clamp(1.85rem, 3.4vw, 2.7rem);
+.modal-copy h3,
+.story-modal-copy h3 {
+  font-size: clamp(1.85rem, 3.2vw, 2.5rem);
 }
 
 .hero-summary,
@@ -177,7 +179,10 @@ button { font: inherit; }
 .contact-link span,
 .modal-tools,
 .modal-summary,
-.modal-points li {
+.modal-points li,
+.story-excerpt,
+.story-modal-content p,
+.story-modal-meta {
   line-height: 1.7;
 }
 
@@ -200,7 +205,8 @@ button { font: inherit; }
 .hero-tag,
 .primary-link,
 .secondary-link,
-.modal-link {
+.modal-link,
+.story-action {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -222,8 +228,9 @@ button { font: inherit; }
 }
 
 .secondary-link,
-.modal-link {
-  border: 1px solid var(--line);
+.modal-link,
+.story-action {
+  border: 1px solid var(--line-dark);
   background: transparent;
 }
 
@@ -245,8 +252,12 @@ button { font: inherit; }
   background: linear-gradient(180deg, #e4e9e4 0%, #f3f3ef 100%);
 }
 
+.stories-shell {
+  background: linear-gradient(180deg, #edf1ec 0%, #f8f8f4 100%);
+}
+
 .section-heading {
-  max-width: 64ch;
+  max-width: 66ch;
 }
 
 .section-heading p {
@@ -256,7 +267,8 @@ button { font: inherit; }
 
 .strength-grid,
 .project-grid,
-.support-grid {
+.support-grid,
+.story-grid {
   display: grid;
   gap: 1rem;
   margin-top: 1rem;
@@ -267,44 +279,52 @@ button { font: inherit; }
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.project-grid {
+.project-grid,
+.story-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .strength-card,
 .project-card,
-.support-card {
+.support-card,
+.story-card {
   border: 1px solid var(--line-dark);
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.74);
 }
 
 .strength-card,
-.support-card {
+.support-card,
+.story-card {
   padding: 1rem;
 }
 
 .strength-card h3,
-.support-card h3 {
+.support-card h3,
+.story-card h3 {
   margin: 0;
   font-size: 1rem;
 }
 
 .strength-card p,
-.support-card p {
+.support-card p,
+.story-excerpt {
   margin: 0.55rem 0 0;
   color: var(--muted-dark);
   font-size: 0.92rem;
 }
 
-.project-card {
+.project-card,
+.story-card {
   overflow: hidden;
   cursor: pointer;
   transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
 }
 
 .project-card:hover,
-.project-card:focus-visible {
+.project-card:focus-visible,
+.story-card:hover,
+.story-card:focus-visible {
   transform: translateY(-4px);
   border-color: rgba(41, 66, 73, 0.24);
   box-shadow: 0 16px 30px rgba(10, 14, 17, 0.12);
@@ -344,7 +364,8 @@ button { font: inherit; }
   font-weight: 800;
 }
 
-.project-tools {
+.project-tools,
+.story-meta {
   margin: 0.45rem 0 0;
   color: var(--muted-dark);
   font-size: 0.8rem;
@@ -355,6 +376,17 @@ button { font: inherit; }
   margin: 0.7rem 0 0;
   color: var(--muted-dark);
   font-size: 0.9rem;
+}
+
+.story-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.story-action {
+  margin-top: 1rem;
+  color: var(--ink-dark);
 }
 
 .contact-copy h2 {
@@ -419,6 +451,10 @@ button { font: inherit; }
   box-shadow: var(--shadow);
 }
 
+.story-modal-panel {
+  width: min(860px, calc(100% - 2rem));
+}
+
 .modal-close {
   position: sticky;
   top: 0;
@@ -440,6 +476,10 @@ button { font: inherit; }
   margin-top: 0.8rem;
 }
 
+.story-modal-copy {
+  margin-top: 0.8rem;
+}
+
 .modal-image-wrap {
   overflow: hidden;
   min-height: 320px;
@@ -458,6 +498,26 @@ button { font: inherit; }
   color: var(--ink);
 }
 
+.story-modal-meta {
+  margin: 0.7rem 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.story-modal-content {
+  margin-top: 1rem;
+}
+
+.story-modal-content p {
+  margin: 0;
+  color: var(--ink);
+}
+
+.story-modal-content p + p {
+  margin-top: 0.9rem;
+}
+
 .modal-points {
   margin: 1rem 0 0;
   padding-left: 1.15rem;
@@ -470,8 +530,13 @@ button { font: inherit; }
   .strength-grid,
   .support-grid,
   .project-grid,
+  .story-grid,
   .contact-list {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .hero-shell {
+    grid-template-columns: minmax(0, 1fr) 260px;
   }
 }
 
@@ -485,7 +550,8 @@ button { font: inherit; }
   .contact-list,
   .strength-grid,
   .project-grid,
-  .support-grid {
+  .support-grid,
+  .story-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -507,7 +573,8 @@ button { font: inherit; }
   }
 
   .section-heading h2,
-  .modal-copy h3 {
+  .modal-copy h3,
+  .story-modal-copy h3 {
     font-size: 2rem;
   }
 
@@ -554,3 +621,4 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+

@@ -1,0 +1,48 @@
+﻿backend:
+  name: github
+  repo: patelshubham099/protfolio
+  branch: main
+  base_url: https://heldthoughts-oauth.patelshubham152-ps.workers.dev
+
+media_folder: "assets/uploads"
+public_folder: "/protfolio/assets/uploads"
+site_url: "https://patelshubham099.github.io/protfolio/"
+display_url: "https://patelshubham099.github.io/protfolio/"
+
+collections:
+  - name: "content"
+    label: "Portfolio Content"
+    files:
+      - label: "Engineering Stories"
+        name: "stories"
+        file: "data/stories.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Stories"
+            name: "stories"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { label: "ID", name: "id", widget: "string", hint: "Lowercase words with hyphens, for example analysis-to-decision" }
+              - { label: "Category", name: "category", widget: "string" }
+              - { label: "Date", name: "date", widget: "string", hint: "Example: March 2026" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Excerpt", name: "excerpt", widget: "text" }
+              - { label: "Summary", name: "summary", widget: "text" }
+              - label: "Takeaways"
+                name: "takeaways"
+                widget: "list"
+                field:
+                  label: "Point"
+                  name: "point"
+                  widget: "string"
+              - label: "Content"
+                name: "content"
+                widget: "list"
+                field:
+                  label: "Paragraph"
+                  name: "text"
+                  widget: "text"
+

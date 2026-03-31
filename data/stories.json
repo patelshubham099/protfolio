@@ -1,0 +1,56 @@
+﻿{
+  "stories": [
+    {
+      "id": "analysis-to-decision",
+      "category": "Powertrain",
+      "date": "March 2026",
+      "title": "When analysis needs to change a design",
+      "excerpt": "Simulation becomes useful only when it pushes a design or release decision forward.",
+      "summary": "A large part of my drivetrain work has been less about generating outputs and more about deciding what those outputs should change.",
+      "takeaways": [
+        "The value of Romax is in the decision it supports, not the report it generates.",
+        "Stack-up and validation follow-up matter because they connect theory to release reality.",
+        "Good analysis shortens decision time when it is tied to design actions."
+      ],
+      "content": [
+        "I have found that analysis work becomes meaningful only when it changes the next engineering step. If a model is accurate but does not help with ratio selection, stack-up, closure, or validation planning, it stays academic.",
+        "In drivetrain work, the useful question is usually not whether the model is detailed enough. The useful question is whether the result is clear enough for the team to act on. That shift in thinking makes the work more practical and more valuable."
+      ]
+    },
+    {
+      "id": "build-reality-in-cad",
+      "category": "Execution",
+      "date": "March 2026",
+      "title": "Why build reality should affect CAD early",
+      "excerpt": "Packaging work gets better when fabrication, assembly, and access are considered from the start.",
+      "summary": "Some of the best CAD decisions are not about cleaner geometry. They are about reducing pain later in build, assembly, and validation.",
+      "takeaways": [
+        "Packaging quality is stronger when assembly and serviceability are considered early.",
+        "Build constraints often improve design judgement rather than limit it.",
+        "Practical exposure changes how clean or useful a model really is."
+      ],
+      "content": [
+        "Baja and project work made this clear to me very early. A layout can look resolved on screen and still create avoidable friction during fabrication or assembly.",
+        "That is why I value build-facing engineering. It forces better decisions on spacing, access, manufacturability, and the overall maturity of the design."
+      ]
+    },
+    {
+      "id": "baja-engineering-loop",
+      "category": "Learning",
+      "date": "March 2026",
+      "title": "What Baja taught me about the engineering loop",
+      "excerpt": "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
+      "summary": "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
+      "takeaways": [
+        "CAD, CAE, build, and testing make more sense when treated as one loop.",
+        "Competition projects teach ownership because design choices show up quickly in reality.",
+        "The fastest way to improve judgement is to stay close to both analysis and hardware."
+      ],
+      "content": [
+        "In Baja work, the design could not stay isolated from analysis, and analysis could not stay isolated from build. Each phase exposed something about the others.",
+        "That experience shaped how I now think about engineering work. I prefer roles where the technical task is connected to validation, practical constraints, and the larger product outcome."
+      ]
+    }
+  ]
+}
+
