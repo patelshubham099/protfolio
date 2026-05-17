@@ -37,15 +37,15 @@ collections:
                 name: "takeaways"
                 widget: "list"
                 allow_add: true
-                field:
-                  label: "Point"
-                  name: "point"
-                  widget: "string"
+                fields:
+                  - label: "Point"
+                    name: "point"
+                    widget: "string"
               - label: "Content"
                 name: "content"
                 widget: "list"
                 allow_add: true
-                field:
-                  label: "Paragraph"
-                  name: "text"
-                  widget: "text"
+                fields:
+                  - label: "Paragraph"
+                    name: "text"
+                    widget: "text"

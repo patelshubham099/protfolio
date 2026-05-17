@@ -1,55 +1,85 @@
-﻿{
-    "stories":  [
-                    {
-                        "id":  "tool-reuse-system-design",
-                        "category":  "Development",
-                        "date":  "May 2026",
-                        "title":  "Using existing tools to develop a new system faster",
-                        "excerpt":  "A new system does not always need a new workflow if existing tools already answer the right engineering questions.",
-                        "summary":  "One practical way to reduce development and validation time is to start from tools, checks, and engineering methods that are already proven inside the workflow.",
-                        "takeaways":  [
-                                          "Reusing existing analysis tools can cut setup time and speed up early decisions.",
-                                          "Known workflows reduce avoidable iteration during validation.",
-                                          "The goal is not novelty in process, but faster confidence in the design."
-                                      ],
-                        "content":  [
-                                        "In system development, the fastest progress often comes from using tools and methods that the team already trusts. If the existing workflow can answer the new design question properly, it is usually better to build on that instead of creating a completely new path.",
-                                        "That approach reduces development time because the tool chain, outputs, and review logic are already understood. It also helps validation move faster, since the engineering team is not spending time proving the method and the design at the same time."
-                                    ]
-                    },
-                    {
-                        "id":  "heat-treatment-distortion",
-                        "category":  "Manufacturing",
-                        "date":  "May 2026",
-                        "title":  "Heat-treatment distortion has to be considered early",
-                        "excerpt":  "Large and thin parts can distort after heat treatment or carburizing, so that risk should be considered at the design stage.",
-                        "summary":  "Distortion after heat treatment or carburizing can become a real issue if the part is too large, too thin, or not planned with process effects in mind from the start.",
-                        "takeaways":  [
-                                          "Heat-treatment distortion is easier to prevent in layout and section planning than after hardware is made.",
-                                          "Large and thin parts need extra attention before the process route is frozen.",
-                                          "Early design awareness reduces avoidable rework during validation and manufacturing."
-                                      ],
-                        "content":  [
-                                        "A part may look acceptable in design, but the process route can still create problems later. Heat treatment and carburizing are two examples where distortion has to be respected early, especially when the geometry becomes large and thin.",
-                                        "It is better to consider that risk at the start rather than treating it as only a manufacturing issue later. That helps avoid unnecessary rework, dimensional instability, and delays during validation or build."
-                                    ]
-                    },
-                    {
-                        "id":  "baja-engineering-loop",
-                        "category":  "Learning",
-                        "date":  "May 2026",
-                        "title":  "What Baja taught me about the engineering loop",
-                        "excerpt":  "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
-                        "summary":  "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
-                        "takeaways":  [
-                                          "Design, analysis, build, and testing make more sense when treated as one loop.",
-                                          "Competition projects teach ownership because design choices show up quickly in reality.",
-                                          "The fastest way to improve judgement is to stay close to both analysis and hardware."
-                                      ],
-                        "content":  [
-                                        "In Baja work, the design could not stay isolated from analysis, and analysis could not stay isolated from build. Each phase exposed something about the others.",
-                                        "That experience shaped how I now think about engineering work. I prefer roles where the technical task is connected to validation, practical constraints, and the larger product outcome."
-                                    ]
-                    }
-                ]
+{
+  "stories": [
+    {
+      "id": "tool-reuse-system-design",
+      "category": "Gear Manufacturing",
+      "date": "May 2026",
+      "title": "Using proven hobbing and shaving routes to shorten gearbox development",
+      "excerpt": "A new gearset moves faster when it stays inside a tool route the plant already understands.",
+      "summary": "If a new gearbox can be built around existing hobbing, shaving, workholding, and inspection capability, development time usually falls because the team is validating the design, not inventing the process.",
+      "takeaways": [
+        {
+          "point": "Known hobbing and shaving routes remove avoidable process-development time."
+        },
+        {
+          "point": "Existing clamping and inspection logic make early quality feedback faster."
+        },
+        {
+          "point": "The best shortcut is often choosing a geometry that fits proven manufacturing capability."
+        }
+      ],
+      "content": [
+        {
+          "text": "For a new gearbox, it helps to check early whether module, pressure angle, face width, and shaft form can stay within tooling and machine capability already used in production. If the same hob family, shaving route, clamping logic, and inspection method can be reused, the team learns faster because fewer variables are changing at once."
+        },
+        {
+          "text": "That shortens development not by cutting corners, but by avoiding unnecessary process invention. The effort stays focused on tooth behaviour, shaft loading, durability, and release readiness rather than on basic process stabilisation."
+        }
+      ]
+    },
+    {
+      "id": "heat-treatment-distortion",
+      "category": "Manufacturing",
+      "date": "May 2026",
+      "title": "Carburizing distortion has to be designed for, not discovered later",
+      "excerpt": "Thin sections and imbalance in geometry can turn heat treatment into a dimensional problem if they are ignored early.",
+      "summary": "Heat treatment is not only a materials step. For gears and related parts, geometry, section thickness, and process route can directly affect distortion, cleanup allowance, and final quality.",
+      "takeaways": [
+        {
+          "point": "Large thin sections deserve distortion review before the geometry is frozen."
+        },
+        {
+          "point": "Tooth edges, section changes, and quench sensitivity can become dimensional problems later."
+        },
+        {
+          "point": "Early allowances and process-aware geometry reduce rework after hardening."
+        }
+      ],
+      "content": [
+        {
+          "text": "Carburizing and quenching can reveal distortion potential that was already built into the part through geometry and process choice. Thin areas react differently from heavier sections, and that can show up as warpage, lead change, or uneven cleanup during finishing."
+        },
+        {
+          "text": "For gears, shafts, and other slender parts, it is safer to think about heat-treatment behaviour at the concept stage itself. Section balance, stock allowance, chamfering, and the likely hardening route should be considered before release, not after hardware starts moving."
+        }
+      ]
+    },
+    {
+      "id": "gear-train-system-view",
+      "category": "Drivetrain Thinking",
+      "date": "May 2026",
+      "title": "Gears, shafts, and bearings should be judged as one system",
+      "excerpt": "Local improvements can create downstream issues if the gear train is not read as a connected system.",
+      "summary": "Drivetrain work gets better when gears, shafts, bearings, fits, and housing behaviour are reviewed together instead of as isolated parts.",
+      "takeaways": [
+        {
+          "point": "A stronger gear is not automatically a better gearbox if it shifts load elsewhere."
+        },
+        {
+          "point": "System reading improves judgement on durability, efficiency, and manufacturability."
+        },
+        {
+          "point": "Useful analysis is the kind that changes a decision before hardware proves it the hard way."
+        }
+      ],
+      "content": [
+        {
+          "text": "In transmission work, a gear decision rarely stays inside the gear alone. A change in tooth geometry, shaft stiffness, bearing support, or fit condition can alter load sharing, misalignment sensitivity, heat, and overall behaviour."
+        },
+        {
+          "text": "That is why the best engineering discussions are usually system-level. The goal is not only to make one part stronger, but to keep the whole gearbox predictable, manufacturable, and easier to validate."
+        }
+      ]
+    }
+  ]
 }

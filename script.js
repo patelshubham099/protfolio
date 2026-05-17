@@ -1,11 +1,11 @@
-﻿const SITE_VERSION = "20260517b";
+const SITE_VERSION = "20260517d";
 
 const profileData = {
   hero: {
     role: "Mechanical Engineer | 3 Years Experience",
     name: "Shubham Patel",
     summary:
-      "Mechanical engineer with experience across EV powertrain development, drivetrain analysis, release support, structural validation, vehicle integration, and build-facing execution. My work has largely sat between simulation, design updates, validation follow-up, and execution support, turning technical findings into practical engineering decisions.",
+      "Mechanical engineer working across EV powertrain development, drivetrain analysis, release support, structural verification, vehicle integration, and execution-facing engineering. My work sits where gears, shafts, validation activity, and manufacturing constraints have to come together into decisions that can actually be released and built.",
     portrait: "./assets/custom/imageprofilr.jpg",
     topics: [
       { label: "Powertrain Development", type: "project", id: "powertrain-dev" },
@@ -21,16 +21,16 @@ const profileData = {
   },
   strengths: [
     {
-      title: "Powertrain Development and Transmission Support",
-      text: "Gearbox modelling, ratio studies, stack-up decisions, and engineering support tied to EV transmission behaviour and product targets."
+      title: "Powertrain Development and Transmission Engineering",
+      text: "Gearbox layouts, ratio studies, fit decisions, and engineering support tied to EV transmission behaviour and product targets."
     },
     {
-      title: "Drivetrain Analysis and Structural Validation",
-      text: "System-level interpretation of shafts, gears, bearings, and structural loads to support durability, efficiency, and validation planning."
+      title: "Drivetrain Analysis and Design Verification",
+      text: "System-level interpretation of gears, shafts, bearings, and structural loads to support durability, efficiency, and confidence before hardware testing."
     },
     {
-      title: "Engineering Release and Validation Support",
-      text: "Tolerance stack-up, drawing support, DFM and RCA closure, validation follow-up, and practical coordination to move engineering work toward release."
+      title: "Release Support and Process Readiness",
+      text: "Drawing updates, fit and tolerance checks, issue closure, test feedback, and practical coordination needed to move engineering work toward release."
     },
     {
       title: "Vehicle Integration and Build Readiness",
@@ -42,17 +42,17 @@ const profileData = {
       id: "powertrain-dev",
       category: "Mobility Systems",
       title: "EV powertrain development",
-      tools: "Romax, Gearbox Design, Tolerance Stack-Up",
+      tools: "Romax, Gearbox Layout, Fits and Tolerances",
       image: "./assets/custom/matter bike.jpg",
       imageFit: "cover",
       excerpt: "Transmission development work connected to validation, release, and product decisions.",
       summary:
-        "At Matter, I worked on transmission-focused development for the Aera platform. The work covered Romax modelling, ratio studies, tolerance stack-up, drawing support, and engineering follow-up linked to validation and release activity.",
+        "At Matter, I worked on transmission-focused development for the Aera platform. The work covered Romax modelling, ratio studies, fit and tolerance review, drawing support, and engineering follow-through linked to validation and release activity.",
       points: [
         "Modelled the 4-speed gearbox for Matter Aera in Romax.",
         "Worked on gear ratio selection and drivetrain behaviour.",
-        "Handled tolerance stack-up and drawing support.",
-        "Supported RCA and DFM closure during validation."
+        "Handled fit checks and drawing support.",
+        "Supported issue closure during validation."
       ],
       links: [
         { label: "Matter Motor Works", url: "https://www.matter.in/" }
@@ -78,16 +78,16 @@ const profileData = {
     {
       id: "process-release",
       category: "Release and Execution",
-      title: "Release support and issue closure",
-      tools: "Tolerance Stack-Up, DFM, RCA, Release Support",
+      title: "Process and release support",
+      tools: "Fits and Tolerances, Drawing Release, Issue Closure",
       image: "./assets/baja_ppt_media/image57.png",
       imageFit: "cover",
       excerpt: "Engineering support around closure, coordination, and getting decisions ready for execution.",
       summary:
-        "A useful part of my work has been carrying analysis and design work through drawing updates, DFM checks, RCA closure, validation follow-up, and release-oriented coordination.",
+        "A useful part of my work has been carrying analysis and design work through drawing updates, producibility checks, root-cause closure, test feedback, and release-oriented coordination.",
       points: [
-        "Worked on tolerance stack-up and drawing-related engineering support.",
-        "Supported DFM and issue-closure activity during validation phases.",
+        "Worked on fit and tolerance checks with drawing-related engineering support.",
+        "Supported producibility review and issue-closure activity during validation phases.",
         "Connected engineering decisions with release and execution needs.",
         "Worked with supplier, manufacturing, and practical process constraints."
       ],
@@ -156,19 +156,19 @@ const profileData = {
     },
     {
       title: "Documentation and Design Review Support",
-      text: "Prepared engineering reports, drawing support material, and technical communication that helped reviews move faster and with more clarity."
+      text: "Prepared engineering reports, drawing support material, and technical communication that helped reviews move with better clarity and less back-and-forth."
     },
     {
       title: "Build and Validation Follow-Up",
-      text: "Stayed close to the practical side of execution through manufacturing exposure, validation closure, and issue-tracking linked to real hardware outcomes."
+      text: "Stayed close to the practical side of execution through manufacturing exposure, validation closure, and issue tracking linked to real hardware outcomes."
     },
     {
-      title: "Leadership and Technical Communication",
-      text: "Progressed into ownership roles in Team Czar and built confidence in explaining engineering work clearly in team, academic, and problem-solving settings."
+      title: "Technical Communication",
+      text: "Comfortable explaining analysis results, design tradeoffs, and issue status clearly in team discussions and review settings."
     }
   ],
   contactNote:
-    "If the conversation is around powertrain systems, drivetrain analysis, structural validation, vehicle integration, or engineering execution, feel free to reach out.",
+    "If the conversation is around powertrain systems, drivetrain analysis, structural verification, vehicle integration, or engineering execution, feel free to reach out.",
   contacts: [
     { label: "Email", action: "Send message", url: "mailto:patelshubham152.ps@gmail.com" },
     { label: "LinkedIn", action: "Open profile", url: "https://linkedin.com/in/shubham-patel-38b679176" },
@@ -179,56 +179,56 @@ const profileData = {
 const fallbackStories = [
   {
     id: "tool-reuse-system-design",
-    category: "Development",
+    category: "Gear Manufacturing",
     date: "May 2026",
-    title: "Using existing tools to develop a new system faster",
-    excerpt: "A new system does not always need a new workflow if existing tools already answer the right engineering questions.",
+    title: "Using proven hobbing and shaving routes to shorten gearbox development",
+    excerpt: "A new gearset moves faster when it stays inside a tool route the plant already understands.",
     summary:
-      "One practical way to reduce development and validation time is to start from tools, checks, and engineering methods that are already proven inside the workflow.",
+      "If a new gearbox can be built around existing hobbing, shaving, workholding, and inspection capability, development time usually falls because the team is validating the design, not inventing the process.",
     takeaways: [
-      "Reusing existing analysis tools can cut setup time and speed up early decisions.",
-      "Known workflows reduce avoidable iteration during validation.",
-      "The goal is not novelty in process, but faster confidence in the design."
+      { point: "Known hobbing and shaving routes remove avoidable process-development time." },
+      { point: "Existing clamping and inspection logic make early quality feedback faster." },
+      { point: "The best shortcut is often choosing a geometry that fits proven manufacturing capability." }
     ],
     content: [
-      "In system development, the fastest progress often comes from using tools and methods that the team already trusts. If the existing workflow can answer the new design question properly, it is usually better to build on that instead of creating a completely new path.",
-      "That approach reduces development time because the tool chain, outputs, and review logic are already understood. It also helps validation move faster, since the engineering team is not spending time proving the method and the design at the same time."
+      { text: "For a new gearbox, it helps to check early whether module, pressure angle, face width, and shaft form can stay within tooling and machine capability already used in production. If the same hob family, shaving route, clamping logic, and inspection method can be reused, the team learns faster because fewer variables are changing at once." },
+      { text: "That shortens development not by cutting corners, but by avoiding unnecessary process invention. The effort stays focused on tooth behaviour, shaft loading, durability, and release readiness rather than on basic process stabilisation." }
     ]
   },
   {
     id: "heat-treatment-distortion",
     category: "Manufacturing",
     date: "May 2026",
-    title: "Heat-treatment distortion has to be considered early",
-    excerpt: "Large and thin parts can distort after heat treatment or carburizing, so that risk should be considered at the design stage.",
+    title: "Carburizing distortion has to be designed for, not discovered later",
+    excerpt: "Thin sections and imbalance in geometry can turn heat treatment into a dimensional problem if they are ignored early.",
     summary:
-      "Distortion after heat treatment or carburizing can become a real issue if the part is too large, too thin, or not planned with process effects in mind from the start.",
+      "Heat treatment is not only a materials step. For gears and related parts, geometry, section thickness, and process route can directly affect distortion, cleanup allowance, and final quality.",
     takeaways: [
-      "Heat-treatment distortion is easier to prevent in layout and section planning than after hardware is made.",
-      "Large and thin parts need extra attention before the process route is frozen.",
-      "Early design awareness reduces avoidable rework during validation and manufacturing."
+      { point: "Large thin sections deserve distortion review before the geometry is frozen." },
+      { point: "Tooth edges, section changes, and quench sensitivity can become dimensional problems later." },
+      { point: "Early allowances and process-aware geometry reduce rework after hardening." }
     ],
     content: [
-      "A part may look acceptable in design, but the process route can still create problems later. Heat treatment and carburizing are two examples where distortion has to be respected early, especially when the geometry becomes large and thin.",
-      "It is better to consider that risk at the start rather than treating it as only a manufacturing issue later. That helps avoid unnecessary rework, dimensional instability, and delays during validation or build."
+      { text: "Carburizing and quenching can reveal distortion potential that was already built into the part through geometry and process choice. Thin areas react differently from heavier sections, and that can show up as warpage, lead change, or uneven cleanup during finishing." },
+      { text: "For gears, shafts, and other slender parts, it is safer to think about heat-treatment behaviour at the concept stage itself. Section balance, stock allowance, chamfering, and the likely hardening route should be considered before release, not after hardware starts moving." }
     ]
   },
   {
-    id: "baja-engineering-loop",
-    category: "Learning",
+    id: "gear-train-system-view",
+    category: "Drivetrain Thinking",
     date: "May 2026",
-    title: "What Baja taught me about the engineering loop",
-    excerpt: "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
+    title: "Gears, shafts, and bearings should be judged as one system",
+    excerpt: "Local improvements can create downstream issues if the gear train is not read as a connected system.",
     summary:
-      "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
+      "Drivetrain work gets better when gears, shafts, bearings, fits, and housing behaviour are reviewed together instead of as isolated parts.",
     takeaways: [
-      "Design, analysis, build, and testing make more sense when treated as one loop.",
-      "Competition projects teach ownership because design choices show up quickly in reality.",
-      "The fastest way to improve judgement is to stay close to both analysis and hardware."
+      { point: "A stronger gear is not automatically a better gearbox if it shifts load elsewhere." },
+      { point: "System reading improves judgement on durability, efficiency, and manufacturability." },
+      { point: "Useful analysis is the kind that changes a decision before hardware proves it the hard way." }
     ],
     content: [
-      "In Baja work, the design could not stay isolated from analysis, and analysis could not stay isolated from build. Each phase exposed something about the others.",
-      "That experience shaped how I now think about engineering work. I prefer roles where the technical task is connected to validation, practical constraints, and the larger product outcome."
+      { text: "In transmission work, a gear decision rarely stays inside the gear alone. A change in tooth geometry, shaft stiffness, bearing support, or fit condition can alter load sharing, misalignment sensitivity, heat, and overall behaviour." },
+      { text: "That is why the best engineering discussions are usually system-level. The goal is not only to make one part stronger, but to keep the whole gearbox predictable, manufacturable, and easier to validate." }
     ]
   }
 ];
@@ -371,6 +371,22 @@ function renderStories(stories) {
   elements.storyGrid.innerHTML = stories.map((story) => buildStoryCard(story)).join("");
 }
 
+function normalizeStoryList(items, key) {
+  return (items || [])
+    .map((item) => {
+      if (typeof item === "string") {
+        return item;
+      }
+
+      if (item && typeof item === "object" && typeof item[key] === "string") {
+        return item[key];
+      }
+
+      return "";
+    })
+    .filter(Boolean);
+}
+
 function openModal(projectId) {
   const project = projectMap.get(projectId);
   if (!project) {
@@ -408,8 +424,12 @@ function openStoryModal(storyId) {
   elements.storyModalTitle.textContent = story.title;
   elements.storyModalMeta.textContent = story.date;
   elements.storyModalSummary.textContent = story.summary;
-  elements.storyModalTakeaways.innerHTML = (story.takeaways || []).map((point) => `<li>${point}</li>`).join("");
-  elements.storyModalContent.innerHTML = (story.content || []).map((paragraph) => `<p>${paragraph}</p>`).join("");
+  elements.storyModalTakeaways.innerHTML = normalizeStoryList(story.takeaways, "point")
+    .map((point) => `<li>${point}</li>`)
+    .join("");
+  elements.storyModalContent.innerHTML = normalizeStoryList(story.content, "text")
+    .map((paragraph) => `<p>${paragraph}</p>`)
+    .join("");
 
   elements.storyModal.hidden = false;
   document.body.style.overflow = "hidden";
