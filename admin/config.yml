@@ -23,17 +23,20 @@ collections:
           - label: "Stories"
             name: "stories"
             widget: "list"
+            label_singular: "Story"
             summary: "{{fields.title}}"
+            collapsed: false
             fields:
-              - { label: "ID", name: "id", widget: "string", hint: "Lowercase words with hyphens, for example analysis-to-decision" }
+              - { label: "ID", name: "id", widget: "string", hint: "Lowercase words with hyphens, for example tool-reuse-system-design" }
               - { label: "Category", name: "category", widget: "string" }
-              - { label: "Date", name: "date", widget: "string", hint: "Example: March 2026" }
+              - { label: "Date", name: "date", widget: "string", hint: "Example: May 2026" }
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Excerpt", name: "excerpt", widget: "text" }
               - { label: "Summary", name: "summary", widget: "text" }
               - label: "Takeaways"
                 name: "takeaways"
                 widget: "list"
+                allow_add: true
                 field:
                   label: "Point"
                   name: "point"
@@ -41,8 +44,8 @@ collections:
               - label: "Content"
                 name: "content"
                 widget: "list"
+                allow_add: true
                 field:
                   label: "Paragraph"
                   name: "text"
                   widget: "text"
-

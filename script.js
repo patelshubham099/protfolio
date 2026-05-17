@@ -1,4 +1,4 @@
-﻿const SITE_VERSION = "20260517a";
+﻿const SITE_VERSION = "20260517b";
 
 const profileData = {
   hero: {
@@ -177,24 +177,6 @@ const profileData = {
 };
 
 const fallbackStories = [
-  {
-    id: "analysis-to-decision",
-    category: "Powertrain",
-    date: "May 2026",
-    title: "When analysis needs to change a design",
-    excerpt: "Simulation becomes useful only when it pushes a design or release decision forward.",
-    summary:
-      "A large part of my drivetrain work has been less about generating outputs and more about deciding what those outputs should change.",
-    takeaways: [
-      "The value of Romax is in the decision it supports, not the report it generates.",
-      "Stack-up and validation follow-up matter because they connect theory to release reality.",
-      "Good analysis shortens decision time when it is tied to design actions."
-    ],
-    content: [
-      "I have found that analysis work becomes meaningful only when it changes the next engineering step. If a model is accurate but does not help with ratio selection, stack-up, closure, or validation planning, it stays academic.",
-      "In drivetrain work, the useful question is usually not whether the model is detailed enough. The useful question is whether the result is clear enough for the team to act on. That shift in thinking makes the work more practical and more valuable."
-    ]
-  },
   {
     id: "tool-reuse-system-design",
     category: "Development",

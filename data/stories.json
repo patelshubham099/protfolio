@@ -1,72 +1,55 @@
 ﻿{
-  "stories": [
-    {
-      "id": "analysis-to-decision",
-      "category": "Powertrain",
-      "date": "May 2026",
-      "title": "When analysis needs to change a design",
-      "excerpt": "Simulation becomes useful only when it pushes a design or release decision forward.",
-      "summary": "A large part of my drivetrain work has been less about generating outputs and more about deciding what those outputs should change.",
-      "takeaways": [
-        "The value of Romax is in the decision it supports, not the report it generates.",
-        "Stack-up and validation follow-up matter because they connect theory to release reality.",
-        "Good analysis shortens decision time when it is tied to design actions."
-      ],
-      "content": [
-        "I have found that analysis work becomes meaningful only when it changes the next engineering step. If a model is accurate but does not help with ratio selection, stack-up, closure, or validation planning, it stays academic.",
-        "In drivetrain work, the useful question is usually not whether the model is detailed enough. The useful question is whether the result is clear enough for the team to act on. That shift in thinking makes the work more practical and more valuable."
-      ]
-    },
-    {
-      "id": "tool-reuse-system-design",
-      "category": "Development",
-      "date": "May 2026",
-      "title": "Using existing tools to develop a new system faster",
-      "excerpt": "A new system does not always need a new workflow if existing tools already answer the right engineering questions.",
-      "summary": "One practical way to reduce development and validation time is to start from tools, checks, and engineering methods that are already proven inside the workflow.",
-      "takeaways": [
-        "Reusing existing analysis tools can cut setup time and speed up early decisions.",
-        "Known workflows reduce avoidable iteration during validation.",
-        "The goal is not novelty in process, but faster confidence in the design."
-      ],
-      "content": [
-        "In system development, the fastest progress often comes from using tools and methods that the team already trusts. If the existing workflow can answer the new design question properly, it is usually better to build on that instead of creating a completely new path.",
-        "That approach reduces development time because the tool chain, outputs, and review logic are already understood. It also helps validation move faster, since the engineering team is not spending time proving the method and the design at the same time."
-      ]
-    },
-    {
-      "id": "heat-treatment-distortion",
-      "category": "Manufacturing",
-      "date": "May 2026",
-      "title": "Heat-treatment distortion has to be considered early",
-      "excerpt": "Large and thin parts can distort after heat treatment or carburizing, so that risk should be considered at the design stage.",
-      "summary": "Distortion after heat treatment or carburizing can become a real issue if the part is too large, too thin, or not planned with process effects in mind from the start.",
-      "takeaways": [
-        "Heat-treatment distortion is easier to prevent in layout and section planning than after hardware is made.",
-        "Large and thin parts need extra attention before the process route is frozen.",
-        "Early design awareness reduces avoidable rework during validation and manufacturing."
-      ],
-      "content": [
-        "A part may look acceptable in design, but the process route can still create problems later. Heat treatment and carburizing are two examples where distortion has to be respected early, especially when the geometry becomes large and thin.",
-        "It is better to consider that risk at the start rather than treating it as only a manufacturing issue later. That helps avoid unnecessary rework, dimensional instability, and delays during validation or build."
-      ]
-    },
-    {
-      "id": "baja-engineering-loop",
-      "category": "Learning",
-      "date": "May 2026",
-      "title": "What Baja taught me about the engineering loop",
-      "excerpt": "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
-      "summary": "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
-      "takeaways": [
-        "Design, analysis, build, and testing make more sense when treated as one loop.",
-        "Competition projects teach ownership because design choices show up quickly in reality.",
-        "The fastest way to improve judgement is to stay close to both analysis and hardware."
-      ],
-      "content": [
-        "In Baja work, the design could not stay isolated from analysis, and analysis could not stay isolated from build. Each phase exposed something about the others.",
-        "That experience shaped how I now think about engineering work. I prefer roles where the technical task is connected to validation, practical constraints, and the larger product outcome."
-      ]
-    }
-  ]
+    "stories":  [
+                    {
+                        "id":  "tool-reuse-system-design",
+                        "category":  "Development",
+                        "date":  "May 2026",
+                        "title":  "Using existing tools to develop a new system faster",
+                        "excerpt":  "A new system does not always need a new workflow if existing tools already answer the right engineering questions.",
+                        "summary":  "One practical way to reduce development and validation time is to start from tools, checks, and engineering methods that are already proven inside the workflow.",
+                        "takeaways":  [
+                                          "Reusing existing analysis tools can cut setup time and speed up early decisions.",
+                                          "Known workflows reduce avoidable iteration during validation.",
+                                          "The goal is not novelty in process, but faster confidence in the design."
+                                      ],
+                        "content":  [
+                                        "In system development, the fastest progress often comes from using tools and methods that the team already trusts. If the existing workflow can answer the new design question properly, it is usually better to build on that instead of creating a completely new path.",
+                                        "That approach reduces development time because the tool chain, outputs, and review logic are already understood. It also helps validation move faster, since the engineering team is not spending time proving the method and the design at the same time."
+                                    ]
+                    },
+                    {
+                        "id":  "heat-treatment-distortion",
+                        "category":  "Manufacturing",
+                        "date":  "May 2026",
+                        "title":  "Heat-treatment distortion has to be considered early",
+                        "excerpt":  "Large and thin parts can distort after heat treatment or carburizing, so that risk should be considered at the design stage.",
+                        "summary":  "Distortion after heat treatment or carburizing can become a real issue if the part is too large, too thin, or not planned with process effects in mind from the start.",
+                        "takeaways":  [
+                                          "Heat-treatment distortion is easier to prevent in layout and section planning than after hardware is made.",
+                                          "Large and thin parts need extra attention before the process route is frozen.",
+                                          "Early design awareness reduces avoidable rework during validation and manufacturing."
+                                      ],
+                        "content":  [
+                                        "A part may look acceptable in design, but the process route can still create problems later. Heat treatment and carburizing are two examples where distortion has to be respected early, especially when the geometry becomes large and thin.",
+                                        "It is better to consider that risk at the start rather than treating it as only a manufacturing issue later. That helps avoid unnecessary rework, dimensional instability, and delays during validation or build."
+                                    ]
+                    },
+                    {
+                        "id":  "baja-engineering-loop",
+                        "category":  "Learning",
+                        "date":  "May 2026",
+                        "title":  "What Baja taught me about the engineering loop",
+                        "excerpt":  "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
+                        "summary":  "Baja was useful because it made engineering feel like a loop instead of a sequence of separate tasks.",
+                        "takeaways":  [
+                                          "Design, analysis, build, and testing make more sense when treated as one loop.",
+                                          "Competition projects teach ownership because design choices show up quickly in reality.",
+                                          "The fastest way to improve judgement is to stay close to both analysis and hardware."
+                                      ],
+                        "content":  [
+                                        "In Baja work, the design could not stay isolated from analysis, and analysis could not stay isolated from build. Each phase exposed something about the others.",
+                                        "That experience shaped how I now think about engineering work. I prefer roles where the technical task is connected to validation, practical constraints, and the larger product outcome."
+                                    ]
+                    }
+                ]
 }
