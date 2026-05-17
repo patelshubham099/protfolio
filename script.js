@@ -2,7 +2,7 @@ const SITE_VERSION = "20260517d";
 
 const profileData = {
   hero: {
-    role: "Mechanical Engineer | 3 Years Experience",
+    role: "Mechanical Engineer | Powertrain and Drivetrain Systems",
     name: "Shubham Patel",
     summary:
       "Mechanical engineer working across EV powertrain development, drivetrain analysis, release support, structural verification, vehicle integration, and execution-facing engineering. My work sits where gears, shafts, validation activity, and manufacturing constraints have to come together into decisions that can actually be released and built.",
