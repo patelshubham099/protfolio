@@ -1,4 +1,4 @@
-﻿const SITE_VERSION = "20260331b";
+﻿const SITE_VERSION = "20260517a";
 
 const profileData = {
   hero: {
@@ -7,7 +7,12 @@ const profileData = {
     summary:
       "Mechanical engineer with experience across EV powertrain development, drivetrain analysis, release support, structural validation, vehicle integration, and build-facing execution. My work has largely sat between simulation, design updates, validation follow-up, and execution support, turning technical findings into practical engineering decisions.",
     portrait: "./assets/custom/imageprofilr.jpg",
-    tags: ["Powertrain Development", "Drivetrain Analysis", "Release Support", "Design Validation"],
+    topics: [
+      { label: "Powertrain Development", type: "project", id: "powertrain-dev" },
+      { label: "Drivetrain Analysis", type: "project", id: "transmission-analysis" },
+      { label: "Release Support", type: "project", id: "process-release" },
+      { label: "Design Validation", type: "project", id: "cae-fea" }
+    ],
     facts: [
       { label: "Based in", value: "Bengaluru, India" },
       { label: "Current role", value: "Ather Energy" },
@@ -175,7 +180,7 @@ const fallbackStories = [
   {
     id: "analysis-to-decision",
     category: "Powertrain",
-    date: "March 2026",
+    date: "May 2026",
     title: "When analysis needs to change a design",
     excerpt: "Simulation becomes useful only when it pushes a design or release decision forward.",
     summary:
@@ -191,27 +196,45 @@ const fallbackStories = [
     ]
   },
   {
-    id: "build-reality-in-cad",
-    category: "Execution",
-    date: "March 2026",
-    title: "Why build reality should affect design early",
-    excerpt: "Packaging work gets better when fabrication, assembly, and access are considered from the start.",
+    id: "tool-reuse-system-design",
+    category: "Development",
+    date: "May 2026",
+    title: "Using existing tools to develop a new system faster",
+    excerpt: "A new system does not always need a new workflow if existing tools already answer the right engineering questions.",
     summary:
-      "Some of the best design decisions are not about cleaner geometry. They are about reducing pain later in build, assembly, and validation.",
+      "One practical way to reduce development and validation time is to start from tools, checks, and engineering methods that are already proven inside the workflow.",
     takeaways: [
-      "Packaging quality is stronger when assembly and serviceability are considered early.",
-      "Build constraints often improve design judgement rather than limit it.",
-      "Practical exposure changes how clean or useful a model really is."
+      "Reusing existing analysis tools can cut setup time and speed up early decisions.",
+      "Known workflows reduce avoidable iteration during validation.",
+      "The goal is not novelty in process, but faster confidence in the design."
     ],
     content: [
-      "Baja and project work made this clear to me very early. A layout can look resolved on screen and still create avoidable friction during fabrication or assembly.",
-      "That is why I value build-facing engineering. It forces better decisions on spacing, access, manufacturability, and the overall maturity of the design."
+      "In system development, the fastest progress often comes from using tools and methods that the team already trusts. If the existing workflow can answer the new design question properly, it is usually better to build on that instead of creating a completely new path.",
+      "That approach reduces development time because the tool chain, outputs, and review logic are already understood. It also helps validation move faster, since the engineering team is not spending time proving the method and the design at the same time."
+    ]
+  },
+  {
+    id: "heat-treatment-distortion",
+    category: "Manufacturing",
+    date: "May 2026",
+    title: "Heat-treatment distortion has to be considered early",
+    excerpt: "Large and thin parts can distort after heat treatment or carburizing, so that risk should be considered at the design stage.",
+    summary:
+      "Distortion after heat treatment or carburizing can become a real issue if the part is too large, too thin, or not planned with process effects in mind from the start.",
+    takeaways: [
+      "Heat-treatment distortion is easier to prevent in layout and section planning than after hardware is made.",
+      "Large and thin parts need extra attention before the process route is frozen.",
+      "Early design awareness reduces avoidable rework during validation and manufacturing."
+    ],
+    content: [
+      "A part may look acceptable in design, but the process route can still create problems later. Heat treatment and carburizing are two examples where distortion has to be respected early, especially when the geometry becomes large and thin.",
+      "It is better to consider that risk at the start rather than treating it as only a manufacturing issue later. That helps avoid unnecessary rework, dimensional instability, and delays during validation or build."
     ]
   },
   {
     id: "baja-engineering-loop",
     category: "Learning",
-    date: "March 2026",
+    date: "May 2026",
     title: "What Baja taught me about the engineering loop",
     excerpt: "The strongest Baja learning was that design, simulation, build, and testing should keep informing each other.",
     summary:
@@ -269,11 +292,15 @@ function renderHero() {
   elements.heroName.textContent = profileData.hero.name;
   elements.heroSummary.textContent = profileData.hero.summary;
   elements.heroPortrait.src = profileData.hero.portrait;
-  elements.heroTags.innerHTML = profileData.hero.tags.map((tag) => `<span class="hero-tag">${tag}</span>`).join("");
+  elements.heroTags.innerHTML = profileData.hero.topics
+    .map(
+      (item) => `<button class="hero-tag hero-tag-link" type="button" data-link-type="${item.type}" data-link-id="${item.id}">${item.label}</button>`
+    )
+    .join("");
   elements.heroFacts.innerHTML = profileData.hero.facts
     .map(
       (item) => `
-        <article class="fact-card">
+        <article class="fact-card compact-fact-card">
           <strong>${item.label}</strong>
           <span>${item.value}</span>
         </article>
@@ -435,6 +462,22 @@ async function loadStories() {
 
 function attachEvents() {
   document.addEventListener("click", (event) => {
+    const directLink = event.target.closest("[data-link-type]");
+    if (directLink) {
+      const linkType = directLink.dataset.linkType;
+      const linkId = directLink.dataset.linkId;
+
+      if (linkType === "project") {
+        openModal(linkId);
+      }
+
+      if (linkType === "story") {
+        openStoryModal(linkId);
+      }
+
+      return;
+    }
+
     const projectCard = event.target.closest("[data-project-id]");
     if (projectCard) {
       openModal(projectCard.dataset.projectId);
@@ -472,6 +515,20 @@ function attachEvents() {
       return;
     }
 
+    const directLink = event.target.closest("[data-link-type]");
+    if (directLink && (event.key === "Enter" || event.key === " ")) {
+      event.preventDefault();
+      const linkType = directLink.dataset.linkType;
+      const linkId = directLink.dataset.linkId;
+      if (linkType === "project") {
+        openModal(linkId);
+      }
+      if (linkType === "story") {
+        openStoryModal(linkId);
+      }
+      return;
+    }
+
     if (event.key === "Escape") {
       if (!elements.modal.hidden) {
         closeModal();
@@ -495,7 +552,3 @@ async function init() {
 }
 
 init();
-
-
-
-
