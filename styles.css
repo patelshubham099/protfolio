@@ -93,6 +93,10 @@ button { font: inherit; }
   color: var(--accent);
 }
 
+.eyebrow {
+  line-height: 1.45;
+}
+
 .hero-copy h1,
 .section-heading h2,
 .modal-copy h3,
@@ -542,12 +546,11 @@ button { font: inherit; }
   }
 
   .hero-side {
-    grid-template-columns: 120px minmax(0, 1fr);
-    gap: 0.9rem;
+    display: block;
   }
 
   .hero-photo {
-    max-width: 120px;
+    max-width: 132px;
     border-radius: 18px;
   }
 
@@ -578,13 +581,27 @@ button { font: inherit; }
     font-size: 2.55rem;
   }
 
+  .eyebrow {
+    font-size: 0.68rem;
+    letter-spacing: 0.11em;
+  }
+
+  .hero-summary {
+    margin-top: 0.8rem;
+    font-size: 0.96rem;
+    line-height: 1.62;
+  }
+
   .hero-tags {
-    gap: 0.6rem;
+    gap: 0.55rem;
+    margin-top: 0.85rem;
   }
 
   .hero-tag {
     width: 100%;
     justify-content: flex-start;
+    min-height: 38px;
+    padding: 0.65rem 0.95rem;
   }
 
   .contact-copy h2,
@@ -594,21 +611,73 @@ button { font: inherit; }
     font-size: 2rem;
   }
 
+  .fact-card,
+  .strength-card,
+  .support-card,
+  .story-card,
+  .project-body,
+  .contact-link {
+    padding: 0.85rem;
+  }
+
+  .modal-panel {
+    width: calc(100% - 1rem);
+    margin: 2vh auto;
+    max-height: 96vh;
+    border-radius: 20px;
+  }
+
+  .modal-image-wrap {
+    min-height: 220px;
+  }
+
   .quiet-admin {
     text-align: left;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-side {
-    grid-template-columns: 1fr;
+  .page-shell {
+    padding: 0.6rem 0.6rem 1.4rem;
   }
 
   .hero-photo {
-    max-width: 150px;
+    max-width: 120px;
   }
 
   .hero-copy h1 {
-    font-size: 2.15rem;
+    font-size: 2rem;
+    line-height: 0.98;
+  }
+
+  .eyebrow {
+    max-width: 28ch;
+  }
+
+  .section-shell,
+  .contact-shell {
+    margin-top: 0.8rem;
+  }
+
+  .section-heading h2,
+  .contact-copy h2,
+  .modal-copy h3,
+  .story-modal-copy h3 {
+    font-size: 1.75rem;
+  }
+
+  .project-tools,
+  .story-meta {
+    font-size: 0.76rem;
+  }
+
+  .story-action,
+  .modal-link {
+    width: 100%;
+  }
+
+  .modal-close {
+    min-height: 36px;
+    padding: 0 0.8rem;
   }
 }

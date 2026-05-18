@@ -1,4 +1,4 @@
-const SITE_VERSION = "20260517d";
+const SITE_VERSION = "20260518a";
 
 const profileData = {
   hero: {
