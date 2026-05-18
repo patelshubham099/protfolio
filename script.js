@@ -1,16 +1,16 @@
-const SITE_VERSION = "20260518a";
+const SITE_VERSION = "20260518b";
 
 const profileData = {
   hero: {
     role: "Mechanical Engineer | Powertrain and Drivetrain Systems",
     name: "Shubham Patel",
     summary:
-      "Mechanical engineer working across EV powertrain development, drivetrain analysis, release support, structural verification, vehicle integration, and execution-facing engineering. My work sits where gears, shafts, validation activity, and manufacturing constraints have to come together into decisions that can actually be released and built.",
+      "Mechanical engineer working across EV powertrain development, drivetrain analysis, process knowledge, structural verification, vehicle integration, and execution-facing engineering. My work sits where gears, shafts, validation activity, and manufacturing constraints have to come together into decisions that can actually be released and built.",
     portrait: "./assets/custom/imageprofilr.jpg",
     topics: [
       { label: "Powertrain Development", type: "project", id: "powertrain-dev" },
       { label: "Drivetrain Analysis", type: "project", id: "transmission-analysis" },
-      { label: "Release Support", type: "project", id: "process-release" },
+      { label: "Process Knowledge", type: "project", id: "process-release" },
       { label: "Design Validation", type: "project", id: "cae-fea" }
     ],
     facts: [
@@ -29,8 +29,8 @@ const profileData = {
       text: "System-level interpretation of gears, shafts, bearings, and structural loads to support durability, efficiency, and confidence before hardware testing."
     },
     {
-      title: "Release Support and Process Readiness",
-      text: "Drawing updates, fit and tolerance checks, issue closure, test feedback, and practical coordination needed to move engineering work toward release."
+      title: "Process Knowledge and Release Coordination",
+      text: "Drawing updates, fit and tolerance checks, issue closure, test feedback, and practical coordination shaped by manufacturing knowledge and release needs."
     },
     {
       title: "Vehicle Integration and Build Readiness",
@@ -78,18 +78,18 @@ const profileData = {
     {
       id: "process-release",
       category: "Release and Execution",
-      title: "Process and release support",
-      tools: "Fits and Tolerances, Drawing Release, Issue Closure",
+      title: "Process knowledge and release coordination",
+      tools: "Manufacturing Knowledge, Fits and Tolerances, Drawing Release",
       image: "./assets/baja_ppt_media/image57.png",
       imageFit: "cover",
       excerpt: "Engineering support around closure, coordination, and getting decisions ready for execution.",
       summary:
-        "A useful part of my work has been carrying analysis and design work through drawing updates, producibility checks, root-cause closure, test feedback, and release-oriented coordination.",
+        "A useful part of my work has been carrying analysis and design work through drawing updates, producibility checks, issue closure, test feedback, and release-oriented coordination informed by manufacturing knowledge.",
       points: [
         "Worked on fit and tolerance checks with drawing-related engineering support.",
         "Supported producibility review and issue-closure activity during validation phases.",
         "Connected engineering decisions with release and execution needs.",
-        "Worked with supplier, manufacturing, and practical process constraints."
+        "Worked with supplier, manufacturing, and process-planning constraints."
       ],
       links: []
     },
@@ -168,7 +168,7 @@ const profileData = {
     }
   ],
   contactNote:
-    "If the conversation is around powertrain systems, drivetrain analysis, structural verification, vehicle integration, or engineering execution, feel free to reach out.",
+    "If the conversation is around powertrain systems, drivetrain analysis, process knowledge, structural verification, vehicle integration, or engineering execution, feel free to reach out.",
   contacts: [
     { label: "Email", action: "Send message", url: "mailto:patelshubham152.ps@gmail.com" },
     { label: "LinkedIn", action: "Open profile", url: "https://linkedin.com/in/shubham-patel-38b679176" },
