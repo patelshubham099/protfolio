@@ -1,11 +1,11 @@
-const SITE_VERSION = "20260518b";
+const SITE_VERSION = "20260518c";
 
 const profileData = {
   hero: {
     role: "Mechanical Engineer | Powertrain and Drivetrain Systems",
     name: "Shubham Patel",
     summary:
-      "Mechanical engineer working across EV powertrain development, drivetrain analysis, process knowledge, structural verification, vehicle integration, and execution-facing engineering. My work sits where gears, shafts, validation activity, and manufacturing constraints have to come together into decisions that can actually be released and built.",
+      "Mechanical engineer working across EV powertrain development, drivetrain analysis, process knowledge, structural verification, and vehicle integration. My work is strongest where design decisions have to stay technically sound and practically buildable.",
     portrait: "./assets/custom/imageprofilr.jpg",
     topics: [
       { label: "Powertrain Development", type: "project", id: "powertrain-dev" },
@@ -22,19 +22,19 @@ const profileData = {
   strengths: [
     {
       title: "Powertrain Development and Transmission Engineering",
-      text: "Gearbox layouts, ratio studies, fit decisions, and engineering support tied to EV transmission behaviour and product targets."
+      text: "Gearbox layouts, ratio studies, and design decisions tied to EV transmission behaviour and product targets."
     },
     {
       title: "Drivetrain Analysis and Design Verification",
-      text: "System-level interpretation of gears, shafts, bearings, and structural loads to support durability, efficiency, and confidence before hardware testing."
+      text: "System-level interpretation of gears, shafts, bearings, and structural loads to support durability, efficiency, and design confidence."
     },
     {
       title: "Process Knowledge and Release Coordination",
-      text: "Drawing updates, fit and tolerance checks, issue closure, test feedback, and practical coordination shaped by manufacturing knowledge and release needs."
+      text: "Drawing updates, producibility review, issue closure, and coordination shaped by manufacturing knowledge and release needs."
     },
     {
       title: "Vehicle Integration and Build Readiness",
-      text: "Vehicle layout, subsystem integration, packaging discipline, and build-aware engineering shaped by manufacturing and assembly constraints."
+      text: "Vehicle layout, subsystem integration, packaging discipline, and build-aware engineering with assembly constraints in mind."
     }
   ],
   projects: [
@@ -45,9 +45,9 @@ const profileData = {
       tools: "Romax, Gearbox Layout, Fits and Tolerances",
       image: "./assets/custom/matter bike.jpg",
       imageFit: "cover",
-      excerpt: "Transmission development work connected to validation, release, and product decisions.",
+      excerpt: "Transmission development work tied to product decisions and engineering follow-through.",
       summary:
-        "At Matter, I worked on transmission-focused development for the Aera platform. The work covered Romax modelling, ratio studies, fit and tolerance review, drawing support, and engineering follow-through linked to validation and release activity.",
+        "At Matter, I worked on transmission-focused development for the Aera platform. The work covered Romax modelling, ratio studies, fit review, drawing support, and engineering follow-through linked to product delivery.",
       points: [
         "Modelled the 4-speed gearbox for Matter Aera in Romax.",
         "Worked on gear ratio selection and drivetrain behaviour.",
@@ -67,7 +67,7 @@ const profileData = {
       imageFit: "contain",
       excerpt: "System-level work across gears, shafts, and bearings for strength, life, and efficiency.",
       summary:
-        "This work was about reading the drivetrain as one interacting system. I used Romax outputs around gears, shafts, and bearings to support strength, life, efficiency, and reliability decisions before hardware validation.",
+        "This work was about reading the drivetrain as one interacting system. I used Romax outputs around gears, shafts, and bearings to support strength, life, efficiency, and reliability decisions before hardware testing.",
       points: [
         "Evaluated gears, shafts, and bearings together at system level.",
         "Used strength, life, and efficiency outputs in design decisions.",
@@ -82,11 +82,11 @@ const profileData = {
       tools: "Manufacturing Knowledge, Fits and Tolerances, Drawing Release",
       image: "./assets/baja_ppt_media/image57.png",
       imageFit: "cover",
-      excerpt: "Engineering support around closure, coordination, and getting decisions ready for execution.",
+      excerpt: "Engineering support around closure, coordination, and release readiness.",
       summary:
-        "A useful part of my work has been carrying analysis and design work through drawing updates, producibility checks, issue closure, test feedback, and release-oriented coordination informed by manufacturing knowledge.",
+        "A useful part of my work has been carrying analysis and design work through drawing updates, producibility checks, issue closure, and release-oriented coordination informed by manufacturing knowledge.",
       points: [
-        "Worked on fit and tolerance checks with drawing-related engineering support.",
+        "Worked on fit review with drawing-related engineering support.",
         "Supported producibility review and issue-closure activity during validation phases.",
         "Connected engineering decisions with release and execution needs.",
         "Worked with supplier, manufacturing, and process-planning constraints."
@@ -152,7 +152,7 @@ const profileData = {
   support: [
     {
       title: "Cross-Functional Coordination",
-      text: "Worked across analysis, design, validation, manufacturing, and release-oriented discussions rather than staying limited to one isolated engineering step."
+      text: "Worked across analysis, design, manufacturing, and release-oriented discussions rather than staying limited to one isolated engineering step."
     },
     {
       title: "Documentation and Design Review Support",
@@ -168,7 +168,7 @@ const profileData = {
     }
   ],
   contactNote:
-    "If the conversation is around powertrain systems, drivetrain analysis, process knowledge, structural verification, vehicle integration, or engineering execution, feel free to reach out.",
+    "If the conversation is around powertrain systems, drivetrain analysis, process knowledge, structural verification, or vehicle integration, feel free to reach out.",
   contacts: [
     { label: "Email", action: "Send message", url: "mailto:patelshubham152.ps@gmail.com" },
     { label: "LinkedIn", action: "Open profile", url: "https://linkedin.com/in/shubham-patel-38b679176" },
